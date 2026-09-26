@@ -1,5 +1,5 @@
-// Saleem Limousine Service Worker
-const CACHE_NAME = 'saleem-v1.0';
+// Selim Limousine Service Worker
+const CACHE_NAME = 'selim-v1.1';
 const STATIC_ASSETS = [
   './',
   './index.html',
