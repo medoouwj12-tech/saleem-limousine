@@ -1,0 +1,2926 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saleem Limousine | سليم ليموزين - لخدمات الليموزين ورجال الأعمال والزفاف</title>
+  <meta name="description" content="سليم ليموزين - أسطول سيارات حديثة 2022-2026 لخدمات ليموزين المطارات من المطارات لكافة محافظات مصر، زفاف العرايس، رجال الأعمال، وسفر المحافظات بأعلى درجات الرفاهية والأمان." />
+  <meta name="keywords" content="سليم ليموزين, ليموزين مطار القاهرة, ليموزين مطارات مصر, ليموزين برج العرب, سيارات زفاف, سفر المحافظات, تأجير سيارات فارهة, Saleem Limousine, Airport Limousine Egypt" />
+
+  <!-- PWA & Mobile Web App Meta Tags -->
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Saleem" />
+  <link rel="apple-touch-icon" href="./images/saleem-logo.jpeg" />
+  <link rel="icon" type="image/jpeg" href="./images/saleem-logo.jpeg" />
+
+  <!-- Google Fonts: Montserrat & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0a0a0a',
+              dark: '#111111',
+              card: '#161616',
+              border: '#262626',
+              red: '#b82329',
+              redDark: '#83161b',
+              redGlow: 'rgba(184, 35, 41, 0.18)',
+              silver: '#b0b0b0',
+              silverLight: '#e0e0e0',
+              gold: '#d4af37'
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif']
+          },
+          boxShadow: {
+            'luxury-red': '0 4px 20px -4px rgba(184, 35, 41, 0.35)',
+            'luxury-card': '0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.05)',
+            'glow-sm': '0 0 10px rgba(184, 35, 41, 0.18)'
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 4s ease-in-out infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2a2a;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b82329;
+    }
+
+    /* Direction Dependent Font Selection */
+    [dir="rtl"] body {
+      font-family: 'Cairo', sans-serif;
+    }
+    [dir="ltr"] body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Luxury Red Gradient Text */
+    .text-gradient-red {
+      background: linear-gradient(135deg, #ffffff 0%, #dcdcdc 50%, #b82329 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-pure-red-gradient {
+      background: linear-gradient(135deg, #d64047 0%, #b82329 55%, #751419 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glassmorphic Luxury Card */
+    .glass-card {
+      background: rgba(22, 22, 22, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .glass-card:hover {
+      border-color: rgba(184, 35, 41, 0.25);
+    }
+
+    /* Custom Red Glow on Hover */
+    .hover-glow {
+      transition: all 0.3s ease;
+    }
+    .hover-glow:hover {
+      box-shadow: 0 4px 20px rgba(184, 35, 41, 0.20);
+      border-color: rgba(184, 35, 41, 0.5);
+      transform: translateY(-3px);
+    }
+
+    /* Luxury pattern background */
+    .bg-carbon {
+      background-color: #0a0a0a;
+      background-image: radial-gradient(#1e1e1e 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* Pulsing Ripple for Floating WhatsApp */
+    @keyframes ripple {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    .animate-ripple {
+      animation: ripple 2s infinite ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-black text-white antialiased selection:bg-brand-red selection:text-white relative overflow-x-hidden">
+
+  <!-- ============================================================ -->
+  <!-- TOP ANNOUNCEMENT BAR                                         -->
+  <!-- ============================================================ -->
+  <div class="bg-gradient-to-r from-neutral-950 via-red-950/40 to-neutral-950 border-b border-white/5 py-2 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-brand-silver">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          <span data-i18n="topbar_status">متاحون 24 ساعة لاستقبال حجوزاتكم</span>
+        </span>
+        <span class="hidden sm:inline-block text-neutral-600">|</span>
+        <span class="hidden sm:inline-flex items-center gap-1.5 text-neutral-300">
+          <i class="fa-solid fa-location-dot text-brand-red"></i>
+          <span data-i18n="topbar_location">من المطارات لكافة محافظات مصر</span>
+        </span>
+        <span class="hidden md:inline-block text-neutral-600">|</span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-neutral-300">
+          <i class="fa-solid fa-handshake text-brand-red"></i>
+          <span data-i18n="topbar_corporate">تعاقدات خاصة مع الشركات</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:01001214078" class="inline-flex items-center gap-1.5 hover:text-white transition-colors">
+          <i class="fa-solid fa-phone text-brand-red"></i>
+          <span class="font-bold text-white tracking-wider">01001214078</span>
+        </a>
+        <span class="text-neutral-600">/</span>
+        <a href="tel:01001214078" class="inline-flex items-center gap-1 hover:text-white transition-colors">
+          <span class="text-neutral-300">01001214078</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- HEADER / NAVBAR                                              -->
+  <!-- ============================================================ -->
+  <header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="relative overflow-hidden rounded-lg p-1 border border-neutral-800 group-hover:border-brand-red/50 transition-colors bg-black">
+            <img src="./images/saleem-logo.jpeg" alt="Saleem Limousine" class="h-14 md:h-16 w-auto max-w-[110px] object-contain transition-transform duration-300 group-hover:scale-105" onerror="this.src='./images/saleem-logo.jpeg'" />
+          </div>
+          <div class="flex flex-col">
+            <span class="font-extrabold text-lg md:text-xl tracking-wider text-white flex items-center gap-1">
+              SALEEM <span class="text-brand-red font-black">LIMOUSINE</span>
+            </span>
+            <span class="text-[10px] tracking-widest text-brand-silver font-medium" data-i18n="brand_tagline">
+              لخدمات الليموزين ورجال الأعمال والزفاف
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-neutral-300">
+          <a href="#home" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_home">الرئيسية</a>
+          <a href="#about" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_about">من نحن</a>
+          <a href="#fleet" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_fleet">أسطول السيارات</a>
+          <a href="#wedding" class="hover:text-brand-red transition-colors py-1 flex items-center gap-1.5 text-red-400 font-semibold relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all">
+            <i class="fa-solid fa-gem text-xs text-brand-red animate-pulse"></i>
+            <span data-i18n="nav_wedding">زفاف العرايس</span>
+          </a>
+          <a href="#services" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_services">خدماتنا</a>
+          <a href="#why-us" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_why_us">لماذا نحن</a>
+          <a href="#contact" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_contact">اتصل بنا</a>
+        </nav>
+
+        <!-- Right Side: Language Switcher & Quick CTA -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Install App Button -->
+          <button id="installPwaBtn" onclick="installPWA()" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/90 hover:border-brand-red hover:bg-neutral-800 transition-all text-xs font-semibold text-neutral-200" title="تثبيت التطبيق على جهازك">
+            <i class="fa-solid fa-mobile-screen-button text-brand-red"></i>
+            <span data-i18n="btn_install_app">تثبيت التطبيق</span>
+          </button>
+
+          <!-- Language Toggle Button -->
+          <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/90 hover:border-brand-red hover:bg-neutral-800 transition-all text-xs font-semibold text-neutral-200" title="Switch Language / تغيير اللغة">
+            <i class="fa-solid fa-globe text-brand-red text-sm"></i>
+            <span id="langLabel">English</span>
+          </button>
+
+          <!-- Book Now CTA Button -->
+          <a href="#booking-section" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brand-red to-brand-redDark text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-luxury-red hover:brightness-110 hover:scale-105 active:scale-95 transition-all">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span data-i18n="btn_book_now">احجز الآن</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-lg border border-neutral-800 text-neutral-300 hover:text-white hover:bg-neutral-900 transition-colors" aria-label="Open Menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-neutral-800 bg-brand-dark/98 px-4 pt-3 pb-6 space-y-3 transition-all">
+      <a href="#home" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_home">الرئيسية</a>
+      <a href="#about" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_about">من نحن</a>
+      <a href="#fleet" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_fleet">أسطول السيارات</a>
+      <a href="#wedding" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-bold flex items-center justify-between">
+        <span data-i18n="nav_wedding">زفاف العرايس</span>
+        <span class="text-xs bg-brand-red text-white px-2 py-0.5 rounded-full" data-i18n="badge_special">مميز</span>
+      </a>
+      <a href="#services" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_services">خدماتنا</a>
+      <a href="#why-us" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_why_us">لماذا نحن</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_contact">اتصل بنا</a>
+      
+      <!-- Mobile Install App Button -->
+      <button onclick="closeMobileMenu(); installPWA();" class="w-full text-right py-2.5 px-3 rounded-lg bg-neutral-900/90 border border-neutral-800 text-neutral-200 hover:text-white flex items-center justify-between transition-colors">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-download text-brand-red"></i>
+          <span data-i18n="btn_install_app_mobile">تثبيت تطبيق سليم</span>
+        </span>
+        <span class="text-[10px] bg-brand-red/20 text-brand-red px-2 py-0.5 rounded font-bold">PWA APP</span>
+      </button>
+
+      <div class="pt-3 border-t border-neutral-800 flex flex-col gap-2">
+        <a href="#booking-section" onclick="closeMobileMenu()" class="w-full text-center bg-brand-red text-white py-3 rounded-lg font-bold shadow-luxury-red" data-i18n="btn_book_now">احجز الآن</a>
+        <a href="tel:01001214078" class="w-full text-center border border-neutral-700 bg-neutral-900 text-neutral-200 py-2.5 rounded-lg text-sm font-semibold flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-brand-red"></i>
+          <span>01001214078</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- HERO SECTION                                                 -->
+  <!-- ============================================================ -->
+  <section id="home" class="relative min-h-[90vh] flex items-center justify-center py-20 px-4 overflow-hidden">
+    
+    <!-- Background Image with Luxury Dark Gradients -->
+    <div class="absolute inset-0 z-0">
+      <img src="./images/hero-bg.jpg" alt="Saleem Limousine Official Banner" class="w-full h-full object-cover object-center filter brightness-45 scale-105 transform duration-1000" onerror="this.src='./hero-bg.jpg'" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-brand-black/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-transparent to-brand-black/90"></div>
+      <!-- Subtle Red Spotlight -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-brand-red/8 rounded-full blur-[140px] pointer-events-none"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto w-full text-center">
+      
+      <!-- Top Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-red-500/20 bg-red-950/25 backdrop-blur-md mb-6">
+        <i class="fa-solid fa-crown text-amber-400 text-xs"></i>
+        <span class="text-xs md:text-sm font-semibold text-neutral-200" data-i18n="hero_pill">
+          الخيار الأول لليموزين الفاخر من المطارات لكافة محافظات مصر
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-tight mb-6">
+        <span data-i18n="hero_title_part1">فخامة وأمان في كل رحلة مع</span><br />
+        <span class="text-pure-red-gradient drop-shadow-md">SALEEM LIMOUSINE</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-neutral-300 font-normal leading-relaxed mb-10" data-i18n="hero_subtitle">
+        استمتع بتجربة سفر فاخرة ومريحة بسيارات حديثة موديلات 2022 : 2026، مع نخبة من أمهر السائقين المحترفين ومتابعة لحظية بنظام GPS على مدار 24 ساعة لضمان سلامتك وراحتك التامة.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+        <a href="#booking-section" class="bg-gradient-to-r from-brand-red to-brand-redDark text-white px-8 py-4 rounded-xl font-extrabold text-base shadow-luxury-red hover:brightness-110 hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group">
+          <i class="fa-solid fa-car-side group-hover:translate-x-1 transition-transform"></i>
+          <span data-i18n="hero_cta_book">احجز رحلتك الفاخرة الآن</span>
+        </a>
+
+        <a href="#fleet" class="border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 hover:border-brand-red text-white px-7 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 backdrop-blur-md">
+          <i class="fa-solid fa-car text-brand-red"></i>
+          <span data-i18n="hero_cta_fleet">استكشف أسطولنا الفاخر</span>
+        </a>
+
+        <a href="#wedding" class="border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 hover:border-brand-red text-white px-7 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 backdrop-blur-md">
+          <i class="fa-solid fa-heart text-brand-red"></i>
+          <span data-i18n="hero_cta_wedding">سيارات زفاف العرايس</span>
+        </a>
+
+        <a href="https://wa.me/201001214078?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%81%20%D9%88%D8%A7%D9%8A%20%D9%84%D9%8A%D9%85%D9%88%D8%B2%D9%8A%D9%86" target="_blank" rel="noopener" class="border border-emerald-600/40 bg-emerald-950/30 hover:bg-emerald-900/40 text-emerald-300 px-6 py-4 rounded-xl font-semibold text-base transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+          <span data-i18n="hero_cta_whatsapp">محادثة واتساب سريعة</span>
+        </a>
+      </div>
+
+      <!-- Quick Trust Indicators Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto pt-6 border-t border-white/10 text-brand-silver">
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-white/5">
+          <i class="fa-solid fa-shield-halved text-brand-red text-lg"></i>
+          <div class="text-right">
+            <span class="block text-xs font-bold text-white" data-i18n="trust_gps_title">متابعة GPS حية</span>
+            <span class="block text-[11px] text-neutral-400" data-i18n="trust_gps_desc">أمان كامل على الطريق</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-white/5">
+          <i class="fa-solid fa-award text-brand-red text-lg"></i>
+          <div class="text-right">
+            <span class="block text-xs font-bold text-white" data-i18n="trust_models_title">موديلات 2022-2026</span>
+            <span class="block text-[11px] text-neutral-400" data-i18n="trust_models_desc">أحدث فئات السيارات</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-white/5">
+          <i class="fa-solid fa-clock text-brand-red text-lg"></i>
+          <div class="text-right">
+            <span class="block text-xs font-bold text-white" data-i18n="trust_time_title">التزام 100% بالموعد</span>
+            <span class="block text-[11px] text-neutral-400" data-i18n="trust_time_desc">دقة متناهية لا تقبل التأخير</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-white/5">
+          <i class="fa-solid fa-headset text-brand-red text-lg"></i>
+          <div class="text-right">
+            <span class="block text-xs font-bold text-white" data-i18n="trust_support_title">خدمة 24/7 متواصلة</span>
+            <span class="block text-[11px] text-neutral-400" data-i18n="trust_support_desc">دعم وحجز فوري</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- SMART BOOKING ENGINE SECTION                                 -->
+  <!-- ============================================================ -->
+  <section id="booking-section" class="relative py-16 px-4 bg-brand-dark border-y border-white/5">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="booking_tag">
+          حجز فوري وذكي | SMART BOOKING ENGINE
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4" data-i18n="booking_heading">
+          احجز رحلتك الآن في دقيقة واحدة
+        </h2>
+        <p class="max-w-2xl mx-auto text-sm sm:text-base text-neutral-400" data-i18n="booking_subheading">
+          املأ تفاصيل رحلتك وسيتم تحويلك مباشرة إلى الواتساب برسالة حجز منسقة ومؤكدة مع فريق عمليات سليم ليموزين.
+        </p>
+      </div>
+
+      <!-- Main Booking Container -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 lg:p-10 shadow-luxury-card border border-neutral-800 relative overflow-hidden">
+        
+        <!-- Subtle background accent -->
+        <div class="absolute -right-24 -top-24 w-72 h-72 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Quick Route Chips -->
+        <div class="mb-8">
+          <label class="block text-xs font-bold text-brand-silver mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-plane-departure text-brand-red"></i>
+            <span data-i18n="quick_routes_label">مسارات سريعة (من المطارات لكافة محافظات مصر):</span>
+          </label>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" onclick="setQuickRoute('مطار القاهرة الدولي (صالة 1, 2, 3)', 'كافة محافظات مصر (حدد وجهتك)', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_cairo_airport">✈️ مطار القاهرة ⇋ كافة المحافظات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('مطار برج العرب الدولي - الإسكندرية', 'الإسكندرية وكافة المحافظات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_borg_airport">✈️ مطار برج العرب ⇋ المحافظات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('مطار سفنكس الدولي', 'القاهرة الكبرى / الجيزة / كافة المحافظات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_sphinx_airport">✈️ مطار سفنكس ⇋ المحافظات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('مطار الغردقة / شرم الشيخ الدولي', 'كافة المحافظات والمنتجعات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_sharm_airport">✈️ مطارات الغردقة وشرم الشيخ</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('من أي محافظة في مصر (حدد موقعك)', 'إلى أي محافظة أخرى (حدد وجهتك)', 'intercity')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_intercity">🚗 سفر بين جميع المحافظات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('استلام العروسين (حدد موقعك)', 'قاعة الفرح والفوتوسيشن', 'wedding')" class="text-xs px-3.5 py-1.5 rounded-full border border-brand-red/30 bg-neutral-900/80 hover:border-brand-red text-neutral-200 transition-colors">
+              <span data-i18n="qr_wedding">💍 زفاف العرايس والمناسبات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('مقر الشركة / المؤسسة', 'كافة المطارات والمحافظات والمؤتمرات', 'corporate')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_corporate">🏢 تعاقدات خاصة مع الشركات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('المنزل / أي محافظة', 'مستشفيات وعيادات القاهرة والمحافظات', 'medical')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_medical">🏥 مشوار كشف دكتور ومستشفيات</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Form Elements -->
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-6">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Pickup Location -->
+            <div>
+              <label for="pickupLocation" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-location-dot text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_pickup">مكان الانطلاق / الاستلام *</span>
+              </label>
+              <div class="relative">
+                <input type="text" id="pickupLocation" required placeholder="مثال: مطار القاهرة الدولي / المعادي / أي محافظة" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+              </div>
+            </div>
+
+            <!-- Dropoff Location -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label for="dropoffLocation" class="block text-xs font-bold text-neutral-300">
+                  <i class="fa-solid fa-flag-checkered text-brand-red ml-1.5 mr-1.5"></i>
+                  <span data-i18n="field_dropoff">مكان الوصول / الوجهة *</span>
+                </label>
+                <button type="button" onclick="swapLocations()" title="تبديل نقطة الاستلام والوصول" class="text-[11px] text-brand-silver hover:text-brand-red inline-flex items-center gap-1 transition-colors px-2 py-0.5 rounded-md bg-neutral-800/80 border border-neutral-700 hover:border-brand-red/50">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <span data-i18n="btn_swap_locations">تبديل الاتجاه</span>
+                </button>
+              </div>
+              <div class="relative">
+                <input type="text" id="dropoffLocation" required placeholder="مثال: مطار القاهرة صالة 3 / الإسكندرية / أي محافظة" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Date -->
+            <div>
+              <label for="tripDate" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-regular fa-calendar text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_date">تاريخ الرحلة *</span>
+              </label>
+              <input type="date" id="tripDate" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors" />
+            </div>
+
+            <!-- Time -->
+            <div>
+              <label for="tripTime" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-regular fa-clock text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_time">وقت الرحلة *</span>
+              </label>
+              <input type="time" id="tripTime" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors" />
+            </div>
+
+            <!-- Trip / Service Type -->
+            <div>
+              <label for="serviceType" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-arrows-split-up-and-left text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_service_type">نوع الرحلة *</span>
+              </label>
+              <select id="serviceType" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
+                <option value="ذهاب" data-i18n="opt_trip_go">ذهاب</option>
+                <option value="عودة" data-i18n="opt_trip_return">عودة</option>
+                <option value="ذهاب وعودة وانتظار" data-i18n="opt_trip_round_wait">ذهاب وعودة وانتظار</option>
+                <option value="ذهاب وعودة وتحركات" data-i18n="opt_trip_round_moves">ذهاب وعودة وتحركات</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Passengers Count -->
+            <div>
+              <label for="passengersCount" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-users text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_passengers">عدد الأفراد (الركاب) *</span>
+              </label>
+              <select id="passengersCount" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
+                <option value="1 فرد" data-i18n="opt_pax_1">1 فرد</option>
+                <option value="2 أفراد" data-i18n="opt_pax_2">2 أفراد</option>
+                <option value="3 أفراد" data-i18n="opt_pax_3">3 أفراد</option>
+                <option value="4 أفراد" data-i18n="opt_pax_4" selected>4 أفراد</option>
+                <option value="5 أفراد" data-i18n="opt_pax_5">5 أفراد</option>
+                <option value="6 أفراد" data-i18n="opt_pax_6">6 أفراد</option>
+                <option value="7 أفراد" data-i18n="opt_pax_7">7 أفراد</option>
+                <option value="8 أفراد" data-i18n="opt_pax_8">8 أفراد</option>
+                <option value="9 أفراد" data-i18n="opt_pax_9">9 أفراد</option>
+                <option value="10 أفراد" data-i18n="opt_pax_10">10 أفراد</option>
+                <option value="11 فرد" data-i18n="opt_pax_11">11 فرد</option>
+                <option value="12 فرد" data-i18n="opt_pax_12">12 فرد</option>
+                <option value="13 فرد" data-i18n="opt_pax_13">13 فرد</option>
+                <option value="14 فرد فأكثر" data-i18n="opt_pax_14_plus">14 فرد فأكثر (مجموعة VIP)</option>
+              </select>
+            </div>
+
+            <!-- Luggage Count -->
+            <div>
+              <label for="luggageCount" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-suitcase-rolling text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_luggage">عدد الحقائب والأمتعة</span>
+              </label>
+              <div class="relative">
+                <input type="number" id="luggageCount" min="0" max="99" placeholder="أدخل عدد الحقائب (مثال: 3)" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Customer Name -->
+            <div>
+              <label for="customerName" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-user text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_name">الاسم بالكامل *</span>
+              </label>
+              <input type="text" id="customerName" required placeholder="أدخل اسمك الكريم" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+            </div>
+
+            <!-- Customer Phone -->
+            <div>
+              <label for="customerPhone" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-phone text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_phone">رقم الهاتف / الواتساب *</span>
+              </label>
+              <input type="tel" id="customerPhone" required placeholder="مثال: 01012345678" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+            </div>
+
+          </div>
+
+          <!-- Notes / Special Requests -->
+          <div>
+            <label for="specialNotes" class="block text-xs font-bold text-neutral-300 mb-2">
+              <i class="fa-solid fa-comment-dots text-brand-red ml-1.5 mr-1.5"></i>
+              <span data-i18n="field_notes">ملاحظات إضافية (رقم الرحلة الجوية، طلب بوكيه ورد، عدد الحقائب...)</span>
+            </label>
+            <textarea id="specialNotes" rows="2" placeholder="أية طلبات خاصة إضافية ترغب في إبلاغنا بها..." class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 transition-colors"></textarea>
+          </div>
+
+          <!-- Submit Buttons Strip -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/5">
+            <div class="text-xs text-neutral-400 flex items-center gap-2">
+              <i class="fa-solid fa-lock text-brand-red"></i>
+              <span data-i18n="booking_privacy">بياناتك آمنة وسريّة 100% ويتم إرسالها لممثل الحجز فوراً.</span>
+            </div>
+
+            <div class="flex items-center gap-3 w-full sm:w-auto">
+              <button type="submit" class="w-full sm:w-auto flex-1 sm:flex-none inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-red to-brand-redDark text-white px-8 py-3.5 rounded-xl font-bold text-sm shadow-luxury-red hover:brightness-110 active:scale-95 transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span data-i18n="btn_confirm_whatsapp">إرسال الحجز عبر واتساب (+201001214078)</span>
+              </button>
+
+              <a href="tel:01001214078" class="inline-flex items-center justify-center p-3.5 rounded-xl border border-neutral-700 bg-neutral-900 hover:border-brand-red text-neutral-200 transition-colors" title="اتصال مباشر">
+                <i class="fa-solid fa-phone text-brand-red"></i>
+              </a>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- FLEET SHOWCASE SECTION                                       -->
+  <!-- ============================================================ -->
+  <section id="fleet" class="py-20 px-4 bg-brand-black border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="fleet_tag">
+          أسطول سليم | OUR PREMIUM FLEET
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4" data-i18n="fleet_heading">
+          سيارات حديثة تلائم كافة المناسبات والرحلات
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="fleet_subheading">
+          جميع سياراتنا موديلات حديثة تبدأ من 2022 حتى 2026، مزودة بنظام تتبع GPS لسلامتكم، مكيفة ومعقمة ومجهزة بأعلى معايير الراحة.
+        </p>
+      </div>
+
+      <!-- Fleet Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <button onclick="filterFleet('all')" class="fleet-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all border border-brand-red bg-brand-red text-white" data-filter="all" data-i18n="tab_all">
+          جميع السيارات
+        </button>
+        <button onclick="filterFleet('sedan')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="sedan" data-i18n="tab_sedan">
+          سيدان فارهة
+        </button>
+        <button onclick="filterFleet('suv')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="suv" data-i18n="tab_suv">
+          SUV ودفع رباعي
+        </button>
+        <button onclick="filterFleet('wedding')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="wedding" data-i18n="tab_wedding">
+          سيارات الزفاف
+        </button>
+        <button onclick="filterFleet('van')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="van" data-i18n="tab_van">
+          فانات وميني باص VIP
+        </button>
+      </div>
+
+      <!-- Fleet Cards Grid -->
+      <div id="fleetGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Car 1: Hyundai Elantra White -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-hyundai-elantra-white.jpg', 'هيونداي إلنترا 2022-2026')">
+            <img src="./images/sedan-hyundai-elantra-white.jpg" alt="هيونداي إلنترا سليم ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-hyundai-elantra-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_elantra_title">هيونداي إلنترا CN7 فارهة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_elantra_desc">
+                راحة استثنائية، ثبات فائق على الطرق السريعة ومثالية لمشاوير المطار وسفر المحافظات ورجال الأعمال.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('هيونداي إلنترا CN7 فارهة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 2: Kia Sportage Red -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/suv-kia-sportage-red.jpg', 'كيا سبورتاج SUV أحمر أمام مقر سليم')">
+            <img src="./images/suv-kia-sportage-red.jpg" alt="كيا سبورتاج سليم" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./suv-kia-sportage-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">SUV 2022-2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_sportage_title">كيا سبورتاج الرياضية SUV</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_suv">دفع رباعي عائلي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_sportage_desc">
+                ارتفاع ممتاز عن الأرض، اتساع فسيح للشنطة، مقاعد مريحة لمسافات السفر الطويلة بين المحافظات.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('كيا سبورتاج الرياضية SUV', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 3: Kia Cerato White -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-kia-cerato-white.jpg', 'كيا سيراتو فارهة الحديثة 2022-2026')">
+            <img src="./images/sedan-kia-cerato-white.jpg" alt="كيا سيراتو سليم ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-kia-cerato-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_cerato_title">كيا سيراتو فارهة الحديثة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_cerato_desc">
+                تصميم انسيابي عصري وراحة ممتازة واستهلاك اقتصادي متطور، مجهزة بالكامل لمشاوير المطار والعمل والسياحة.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('كيا سيراتو فارهة الحديثة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 4: Toyota HiAce Luxury Passenger Minibus -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-white.jpg', 'تويوتا هاي إس ميني باص VIP 14 راكب')">
+            <img src="./images/van-toyota-hiace-white.jpg" alt="تويوتا هاي إس فارهة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_title">تويوتا هاي إس Custom VIP</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان عائلية وسياحية</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_desc">
+                صالون سياحي فاخر بمقاعد جلد كابتن شير كاستم وشاشات سقفية وتكييف مركزي قوي للرحلات والمطارات.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس Custom VIP 14 راكب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 5: Kia Sportage Silver SUV -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/suv-kia-sportage-silver.jpg', 'كيا سبورتاج سيلفر إيديشن SUV')">
+            <img src="./images/suv-kia-sportage-silver.jpg" alt="كيا سبورتاج سيلفر" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./suv-kia-sportage-silver.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">SUV 2022-2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_sportage_silver_title">كيا سبورتاج سيلفر إيديشن SUV</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_suv">دفع رباعي عائلي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_sportage_silver_desc">
+                طراز فضي فاخر بلمسات كرومية أنيقة، مساحة واسعة للحقائب والركاب مع أداء قوي وثبات عالٍ.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('كيا سبورتاج سيلفر إيديشن SUV', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 6: Toyota Corolla Blue -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-toyota-corolla-blue.jpg', 'تويوتا كورولا 2022-2026 كحلي')">
+            <img src="./images/sedan-toyota-corolla-blue.jpg" alt="تويوتا كورولا سليم" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-toyota-corolla-blue.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_corolla_title">تويوتا كورولا الحديثة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان فارهة</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_corolla_desc">
+                الاعتمادية الأولى عالمياً بأعلى مستويات الراحة والعزل الصوتي، مثالية لمشاوير القاهرة والمطارات.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا كورولا الحديثة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 7: Kia Carens Family Red (7 Seats) -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/family-kia-carens-red.jpg', 'كيا كارينز عائلية 7 ركاب')">
+            <img src="./images/family-kia-carens-red.jpg" alt="كيا كارينز عائلية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./family-kia-carens-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">7 ركاب</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_carens_title">كيا كارينز عائلية رحبة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_family">عائلية 7 مقاعد</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_carens_desc">
+                الحل الأمثل للعائلات والمجموعات حتى 7 أفراد، مع مرونة تامة لطي المقاعد وتوسيع مساحة الحقائب.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('كيا كارينز عائلية 7 ركاب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 8: Hyundai Elantra Night Edition -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-hyundai-elantra-night.jpg', 'هيونداي إلنترا نايت إيديشن 2022-2026')">
+            <img src="./images/sedan-hyundai-elantra-night.jpg" alt="هيونداي إلنترا نايت إيديشن" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-hyundai-elantra-night.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_elantra_night_title">هيونداي إلنترا نايت إيديشن</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_elantra_night_desc">
+                طراز خاص بإضاءة ليلية وشخصية رياضية فخمة، عزل صوتي متفوق ومقاعد وثيرة لأطول الرحلات.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('هيونداي إلنترا نايت إيديشن', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 9: Toyota HiAce Highway Express -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-highway.jpg', 'تويوتا هاي إس إكسبريس للسفر والمحافظات')">
+            <img src="./images/van-toyota-hiace-highway.jpg" alt="تويوتا هاي إس طريق سريع" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-highway.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_highway_title">تويوتا هاي إس إكسبريس للسفر</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان سياحية وسفر</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_highway_desc">
+                جاهزة لرحلات الطرق السريعة بين المطارات والقاهرة وكافة المحافظات، ثبات فائق ومساحة أمتعة ضخمة.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس إكسبريس للسفر', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 10: Toyota HiAce Tourism Safari -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-mountain.jpg', 'تويوتا هاي إس رحلات وسياحة')">
+            <img src="./images/van-toyota-hiace-mountain.jpg" alt="تويوتا هاي إس سياحة وسفاري" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-mountain.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_safari_title">تويوتا هاي إس سفاري ورحلات</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان عائلية وسياحية</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_safari_desc">
+                مجهزة بأحدث مقاعد الراحة للرحلات السياحية للمصايف والعين السخنة وشرم الشيخ مع شاشات ترفيه.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس رحلات وسياحة', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 11: Mercedes White AMG Wedding -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-2.jpg', 'مرسيدس AMG C-Class بيضاء زفاف أمام مقر سليم')">
+            <img src="./images/wedding-2.jpg" alt="مرسيدس AMG وايت إيديشن زفاف" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-mercedes-amg-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full" data-i18n="car_badge_exclusive">الأكثر طلباً للعرائس</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_merc_white_title">مرسيدس AMG وايت إيديشن زفاف</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_white_desc">
+                درة أسطول الزفاف الأبيض لشركة سليم، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('مرسيدس AMG بيضاء زفاف', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 12: Mercedes Brabus Wedding Black -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-1.jpg', 'مرسيدس C-Class برابوس زفاف')">
+            <img src="./images/wedding-1.jpg" alt="مرسيدس زفاف برابوس" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-mercedes-brabus-black.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full">VIP زفاف</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_merc_brabus_title">مرسيدس C-Class برابوس</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_brabus_desc">
+                القمة في الفخامة والهيبة مع باقة ورد ملكية وتجهيز متكامل للزفاف والمناسبات الخاصة الرفيعة.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('مرسيدس C-Class برابوس', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 13: Peugeot 508 Red Wedding -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-3.jpg', 'بيجو 508 جي تي أحمر ياقوتي زفاف')">
+            <img src="./images/wedding-3.jpg" alt="بيجو 508 زفاف حمراء" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-peugeot-508-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-neutral-900/90 text-neutral-300 border border-neutral-700 text-[11px] font-bold px-3 py-1 rounded-full shadow-lg" data-i18n="car_badge_sport">رياضية فاخرة</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_peugeot_red_title">بيجو 508 جي تي أحمر ياقوتي</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_peugeot_red_desc">
+                حضور لافت وجذاب بلون أحمر ملكي وبوكيه ورد أبيض فاخر وفتحة سقف بانورامية لصور زفاف لا تُنسى.
+              </p>
+            </div>
+            <button onclick="bookSpecificCar('بيجو 508 زفاف حمراء', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- SPECIAL FEATURE: WEDDING CARS & ZAFAF                        -->
+  <!-- ============================================================ -->
+  <section id="wedding" class="py-20 px-4 bg-brand-dark border-t border-white/5 relative overflow-hidden">
+    
+    <!-- Ambient Rose/Red Glows -->
+    <div class="absolute top-10 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="absolute bottom-10 left-0 w-80 h-80 bg-neutral-900/40 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-red/25 bg-neutral-900/80 text-neutral-200 text-xs font-bold mb-3">
+          <i class="fa-solid fa-heart text-brand-red animate-pulse"></i>
+          <span data-i18n="wedding_badge">خدمات زفاف العرايس الفاخرة | WEDDING & BRIDAL SERVICES</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
+          <span data-i18n="wedding_title_1">اجعل ليلة العمر أسطورية مع</span><br />
+          <span class="text-pure-red-gradient" data-i18n="wedding_title_2">أفخم سيارات الزفاف والمناسبات في مصر</span>
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="wedding_desc">
+          نوفر للعريس والعروس أرقى سيارات الزفاف المجهزة والمزينة بأحدث تصميمات باقات الورد الطبيعي، مع سائقين بمظهر رسمي أنيق والتزام تام بأدق مواعيد جلسات التصوير وقاعات الأفراح.
+        </p>
+      </div>
+
+      <!-- Wedding Gallery Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Wedding Car 1: Mercedes Brabus Black -->
+        <div class="glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between">
+          <div class="relative overflow-hidden aspect-[4/3] cursor-pointer" onclick="openLightbox('./images/wedding-1.jpg', 'مرسيدس C-Class برابوس بلاك إيديشن - زفاف')">
+            <img src="./images/wedding-1.jpg" alt="مرسيدس زفاف سوداء" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='./wedding-mercedes-brabus-black.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg" data-i18n="car_badge_vip">VIP زفاف</span>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+              <span class="font-bold flex items-center gap-1.5">
+                <i class="fa-solid fa-certificate text-amber-400"></i>
+                <span data-i18n="wedding_car1_title">مرسيدس C-Class برابوس إيديشن</span>
+              </span>
+              <span class="text-[11px] text-neutral-300 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm">
+                <i class="fa-solid fa-expand ml-1"></i> تكبير
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-neutral-300 mb-4 leading-relaxed" data-i18n="wedding_car1_desc">
+              سيارة مرسيدس سوداء ملوكية بتصميم برابوس الرياضي، مزينة بأجمل تشكيلة زهور بيضاء على الكبوت والمقابض لحضور مهيب يخطف الأنظار.
+            </p>
+            <div class="pt-3 border-t border-neutral-800 flex items-center justify-between">
+              <span class="text-xs text-neutral-400 flex items-center gap-1">
+                <i class="fa-solid fa-camera-retro text-brand-red"></i>
+                <span data-i18n="wedding_feature_photo">جاهزة لجلسات الفوتوسيشن</span>
+              </span>
+              <button onclick="bookSpecificCar('مرسيدس C-Class برابوس زفاف', 'زفاف العرايس والمناسبات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-1 transition-colors">
+                <span data-i18n="btn_book_car">احجز الآن</span>
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wedding Car 2: Mercedes White AMG at Saleem -->
+        <div class="glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between">
+          <div class="relative overflow-hidden aspect-[4/3] cursor-pointer" onclick="openLightbox('./images/wedding-2.jpg', 'مرسيدس AMG وايت إيديشن أمام مقر سليم')">
+            <img src="./images/wedding-2.jpg" alt="مرسيدس AMG بيضاء زفاف" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='./wedding-mercedes-amg-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full" data-i18n="car_badge_exclusive">الأكثر طلباً للعرائس</span>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+              <span class="font-bold flex items-center gap-1.5">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <span data-i18n="wedding_car2_title">مرسيدس AMG C-Class ناصعة البياض</span>
+              </span>
+              <span class="text-[11px] text-neutral-300 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm">
+                <i class="fa-solid fa-expand ml-1"></i> تكبير
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-neutral-300 mb-4 leading-relaxed" data-i18n="wedding_car2_desc">
+              الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي.
+            </p>
+            <div class="pt-3 border-t border-neutral-800 flex items-center justify-between">
+              <span class="text-xs text-neutral-400 flex items-center gap-1">
+                <i class="fa-solid fa-wand-magic-sparkles text-brand-red"></i>
+                <span data-i18n="wedding_feature_clean">تعقيم وتلميع فندقي كامل</span>
+              </span>
+              <button onclick="bookSpecificCar('مرسيدس AMG C-Class بيضاء زفاف', 'زفاف العرايس والمناسبات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-1 transition-colors">
+                <span data-i18n="btn_book_car">احجز الآن</span>
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wedding Car 3: Peugeot 508 Red -->
+        <div class="glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between">
+          <div class="relative overflow-hidden aspect-[4/3] cursor-pointer" onclick="openLightbox('./images/wedding-3.jpg', 'بيجو 508 أحمر ملكي مزينة للزفاف')">
+            <img src="./images/wedding-3.jpg" alt="بيجو 508 زفاف حمراء" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='./wedding-peugeot-508-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-neutral-900/90 text-neutral-300 border border-neutral-700 text-[11px] font-bold px-3 py-1 rounded-full shadow-lg" data-i18n="car_badge_sport">رياضية فاخرة</span>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+              <span class="font-bold flex items-center gap-1.5">
+                <i class="fa-solid fa-fire text-brand-red"></i>
+                <span data-i18n="wedding_car3_title">بيجو 508 جي تي - لون أحمر ياقوتي</span>
+              </span>
+              <span class="text-[11px] text-neutral-300 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm">
+                <i class="fa-solid fa-expand ml-1"></i> تكبير
+              </span>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-neutral-300 mb-4 leading-relaxed" data-i18n="wedding_car3_desc">
+              إطلالة جريئة وعصرية بلون أحمر ياقوتي ساحر مع بوكيه ورود أبيض ناصع، مجهزة بفتحة سقف بانوراما وإضاءات داخلية متميزة.
+            </p>
+            <div class="pt-3 border-t border-neutral-800 flex items-center justify-between">
+              <span class="text-xs text-neutral-400 flex items-center gap-1">
+                <i class="fa-solid fa-clock text-brand-red"></i>
+                <span data-i18n="wedding_feature_punctual">وصول قبل الموعد بـ 30 دقيقة</span>
+              </span>
+              <button onclick="bookSpecificCar('بيجو 508 زفاف حمراء', 'زفاف العرايس والمناسبات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-1 transition-colors">
+                <span data-i18n="btn_book_car">احجز الآن</span>
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Wedding Service Pillars -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red shrink-0 text-lg">
+            <i class="fa-solid fa-fan"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-1" data-i18n="wedding_pillar1_title">تزيين احترافي متكامل</h3>
+            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar1_desc">أرقى خامات الورد الطبيعي والصناعي الفاخر وتنسيقات شرائط ملائمة لفستان الزفاف.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red shrink-0 text-lg">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-1" data-i18n="wedding_pillar2_title">سائقون على أعلى مستوى من الخبرة</h3>
+            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar2_desc">بدلة كاملة، تهذيب وأخلاق راقية، وتعامل احترافي يليق بأهم يوم في حياتكم.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red shrink-0 text-lg">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-1" data-i18n="wedding_pillar3_title">أنظمة صوت وإضاءة VIP</h3>
+            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar3_desc">أنظمة صوتية عالية النقاء لتشغيل أغانيك المفضلة أثناء الزفة والتنقلات.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-neutral-900/60 border border-neutral-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red shrink-0 text-lg">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-1" data-i18n="wedding_pillar4_title">باقات زفاف مرنة</h3>
+            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar4_desc">عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية في كافة محافظات مصر.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Wedding Call To Action -->
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/201001214078?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9%20%D8%B2%D9%81%D8%A7%D9%81%20%D8%B9%D8%B1%D8%A7%D9%8A%D8%B3" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-gradient-to-r from-rose-700 via-brand-red to-brand-redDark text-white px-8 py-4 rounded-xl font-black text-base shadow-luxury-red hover:brightness-110 hover:scale-105 transition-all">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span data-i18n="btn_book_wedding_now">احجز سيارة زفافك الآن عبر واتساب</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- VAN & VIP MINIBUS INTERIOR SHOWCASE                          -->
+  <!-- ============================================================ -->
+  <section class="py-16 px-4 bg-brand-black border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="glass-card rounded-2xl p-6 sm:p-10 border border-neutral-800">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-bold mb-3">
+              <i class="fa-solid fa-couch text-brand-red"></i>
+              <span data-i18n="interior_badge">صالون الفخامة والراحة | LUXURY VIP INTERIOR</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4" data-i18n="interior_title">
+              رحلات جماعية وسياحية برفاهية الطائرات الخاصة
+            </h3>
+            <p class="text-xs sm:text-sm text-neutral-300 mb-6 leading-relaxed" data-i18n="interior_desc">
+              تنفرد فانات سليم ليموزين بصالون داخلي مجهز بأفخم مقاعد الكابتن الجلدية المريحة، شاشات ترفيه سقفية ذكية، نظام صوتي مجسم، ستائر عازلة للضوء، وإضاءات ليلية هادئة لقضاء أمتع الرحلات وأطولها دون أي تعب.
+            </p>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-neutral-300 mb-8">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-brand-red"></i>
+                <span data-i18n="interior_point1">مقاعد جلدية مريحة مع مساند للذراعين وقابلة للإمالة</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-brand-red"></i>
+                <span data-i18n="interior_point2">شاشات عرض سقفية Multimedia Full HD</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-brand-red"></i>
+                <span data-i18n="interior_point3">منافذ شحن USB للهواتف والأجهزة الذكية لكل راكب</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-brand-red"></i>
+                <span data-i18n="interior_point4">تكييف مركزي متعدد الفتحات لكافة الصفوف</span>
+              </li>
+            </ul>
+
+            <button onclick="bookSpecificCar('تويوتا هاي إس VIP Custom 14 راكب', 'سفر محافظات وسياحة')" class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redDark text-white px-6 py-3 rounded-xl font-bold text-xs sm:text-sm shadow-luxury-red transition-all">
+              <i class="fa-solid fa-van-shuttle"></i>
+              <span data-i18n="btn_book_van_now">احجز الميني باص VIP لرحلتك القادمة</span>
+            </button>
+          </div>
+
+          <!-- Interior Photos Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-xl overflow-hidden aspect-[4/3] border border-white/10 cursor-pointer group" onclick="openLightbox('./images/van-interior-luxury-seats.jpg', 'فرش داخلي فاخر - فانات سليم')">
+              <img src="./images/van-interior-luxury-seats.jpg" alt="مقاعد الفان الفاخرة" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='./van-interior-luxury-seats.jpg'" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-[4/3] border border-white/10 cursor-pointer group" onclick="openLightbox('./images/van-interior-vip-screen.jpg', 'شاشات سقفية وتكييف مركزي - سليم')">
+              <img src="./images/van-interior-vip-screen.jpg" alt="شاشة سقفية وتكييف الفان" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='./van-interior-vip-screen.jpg'" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-[4/3] border border-white/10 cursor-pointer group" onclick="openLightbox('./images/van-toyota-hiace-mountain.jpg', 'رحلات المحافظات والجبال')">
+              <img src="./images/van-toyota-hiace-mountain.jpg" alt="تويوتا هاي إس في رحلات السفر" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-travel.jpg'" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-[4/3] border border-white/10 cursor-pointer group" onclick="openLightbox('./images/van-toyota-hiace-highway.jpg', 'رحلات الطرق السريعة')">
+              <img src="./images/van-toyota-hiace-highway.jpg" alt="الفان على الطريق السريع" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-highway.jpg'" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- SERVICES SECTION                                             -->
+  <!-- ============================================================ -->
+  <section id="services" class="py-20 px-4 bg-brand-dark border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="services_tag">
+          خدماتنا المتكاملة | COMPLETE LIMOUSINE SERVICES
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4" data-i18n="services_heading">
+          خدمات راقية مصممة لتلبية كافة احتياجاتكم
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="services_subheading">
+          سواء كنت متجهاً إلى المطار، تستعد لحفل زفافك، أو تسافر لرحلة عمل بين المحافظات، سليم ليموزين شريكك الموثوق على الطريق.
+        </p>
+      </div>
+
+      <!-- Services Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Airport Transfer -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_airport_title">استقبال وتوديع المطارات</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_airport_desc">
+              خدمة استقبال راقية من وإلى مطار القاهرة، مطار برج العرب، مطار سفنكس، ومطار شرم الشيخ مع متابعة مواعيد رحلات الطيران واستقبال العملاء بلافتة الاسم والترحيب.
+            </p>
+          </div>
+          <a href="#booking-section" onclick="prefillService('استقبال وتوديع مطارات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_service">احجز خدمة المطار</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Service 2: Wedding Limousines -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_wedding_title">زفاف العرايس والمناسبات</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_wedding_desc">
+              أسطول زفاف متكامل من أحدث سيارات المرسيدس والبيجو والسيدان، تزيين بأرقى الورود الطبيعية، وسائقين بزي رسمي كامل لجعل ليلة زفافكم ذكرى خالدة.
+            </p>
+          </div>
+          <a href="#wedding" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_view_wedding">تصفح باقات الزفاف</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Service 3: Corporate & VIP Executive -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl shadow-sm">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-brand-red/10 text-brand-red border border-brand-red/25" data-i18n="badge_corporate">تعاقدات حصرية</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_corp_title">تعاقدات خاصة مع الشركات ورجال الأعمال</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_corp_desc">
+              عقود سنوية وشهرية مخصصة للشركات والمؤسسات بأسعار تفضيلية، وتنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين بلباقة عالية ولغة إنجليزية.
+            </p>
+          </div>
+          <a href="#booking-section" onclick="prefillService('تعاقدات خاصة مع الشركات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_corp">طلب تعاقد شركات</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Service 4: Intercity Travel -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_intercity_title">سفر محافظات مصر</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_intercity_desc">
+              سفر آمن وسريع من وإلى كافة المطارات وجميع محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).
+            </p>
+          </div>
+          <a href="#booking-section" onclick="prefillService('سفر محافظات وسياحة')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_service">احجز سفر المحافظات</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Service 5: Medical & Doctor Visits -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_medical_title">مشاوير كشف الأطباء</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_medical_desc">
+              تنقلات مريحة وهادئة من الباب إلى الباب لزيارة المراكز الطبية والعيادات المتخصصة في القاهرة والإسكندرية، مع انتظار المريض حتى إتمام الكشف والعودة.
+            </p>
+          </div>
+          <a href="#booking-section" onclick="prefillService('مشاوير كشف أطباء')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_service">احجز مشوار طبي</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Service 6: VIP Group Vans & Tourism -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-van-shuttle"></i>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_group_title">رحلات سياحية وفانات VIP</h3>
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_group_desc">
+              فانات تويوتا هاي إس معدلة بصالون طائرات خاص 14 راكب مع شاشات ترفيهية وكراسي مريحة لكافة الرحلات السياحية والعائلية في جميع أنحاء مصر.
+            </p>
+          </div>
+          <a href="#booking-section" onclick="prefillService('سفر محافظات وسياحة')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_service">احجز فان سياحي</span>
+            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- ABOUT US & AUTHENTIC OFFICE SHOWCASE                         -->
+  <!-- ============================================================ -->
+  <section id="about" class="py-20 px-4 bg-brand-black border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Text Content -->
+        <div>
+          <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="about_tag">
+            عن سليم ليموزين | ABOUT SALEEM
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6">
+            <span data-i18n="about_heading_1">الريادة في عالم الليموزين</span><br />
+            <span class="text-pure-red-gradient" data-i18n="about_heading_2">ثقة وأمان على مدار سنوات</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed mb-6" data-i18n="about_p1">
+            تأسست شركة <strong>سليم ليموزين (Saleem Limousine & Trips)</strong> في قلب محافظة مصر لتكون العلامة الفارقة في خدمات النقل السياحي والليموزين الفاخر. نفتخر بتقديم تجربة تنقل استثنائية تجمع بين الفخامة، الأمان المطلق، والدقة الصارمة في المواعيد.
+          </p>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-8" data-i18n="about_p2">
+            يمتلك أسطولنا أحدث الطرازات العالمية المزودة بأحدث وسائل الترفيه والأمان، ويديره فريق عمل مدرب ومجهز بغرفة عمليات مركزية لمتابعة كل سيارة بنظام GPS لضمان أعلى مستويات الطمأنينة لعملائنا الكرام.
+          </p>
+
+          <!-- Key Stats Counters -->
+          <div class="grid grid-cols-3 gap-4 p-5 rounded-2xl bg-neutral-900/80 border border-neutral-800 text-center mb-8">
+            <div>
+              <span class="block text-2xl sm:text-3xl font-black text-white text-gradient-red">+10</span>
+              <span class="text-[11px] text-neutral-400" data-i18n="stat_years">سنوات خبرة</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-black text-brand-red">50,000+</span>
+              <span class="text-[11px] text-neutral-400" data-i18n="stat_trips">رحلة آمنة مكتملة</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-black text-white text-gradient-red">100%</span>
+              <span class="text-[11px] text-neutral-400" data-i18n="stat_satisfaction">رضا العملاء</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="tel:01001214078" class="inline-flex items-center gap-2.5 bg-brand-red hover:bg-brand-redDark text-white px-6 py-3 rounded-xl font-bold text-xs sm:text-sm shadow-luxury-red transition-all">
+              <i class="fa-solid fa-phone"></i>
+              <span data-i18n="btn_call_us">اتصل بنا: 01001214078</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 border border-neutral-700 bg-neutral-900 hover:border-brand-red text-neutral-200 px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all">
+              <i class="fa-solid fa-map-location-dot text-brand-red"></i>
+              <span data-i18n="btn_visit_us">زيارة مقر الشركة</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Authentic Real Office Photos Grid -->
+        <div class="space-y-4">
+          <!-- Main Branch Photo -->
+          <div class="relative rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl group cursor-pointer" onclick="openLightbox('./images/saleem-fleet-van.jpg', 'سيارة تويوتا هاي إيس VIP من أسطول سليم')">
+            <img src="./images/saleem-fleet-van.jpg" alt="سيارة تويوتا هاي إيس VIP من أسطول سليم" class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='./images/saleem-fleet-van.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 right-4 left-4 flex items-center justify-between text-white">
+              <div>
+                <span class="text-xs font-bold block" data-i18n="office_caption_title">أسطول سليم ليموزين</span>
+                <span class="text-[11px] text-neutral-300" data-i18n="office_caption_sub">سيارات بخدمة سائق محترف على مدار الساعة</span>
+              </div>
+              <span class="text-xs bg-brand-red text-white px-3 py-1 rounded-full font-bold" data-i18n="office_badge">خدمة 24/7</span>
+            </div>
+          </div>
+
+          <!-- Secondary Grid with Brand Poster -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-[16/10] cursor-pointer group" onclick="openLightbox('./images/saleem-van-interior.jpg', 'خدمات سليم ليموزين المعتمدة')">
+              <img src="./images/saleem-van-interior.jpg" alt="فلاير خدمات سليم ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./images/saleem-van-interior.jpg'" />
+            </div>
+            <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-[16/10] cursor-pointer group" onclick="openLightbox('./images/saleem-car-interior.jpg', 'سليم ليموزين - لخدمات الشركات')">
+              <img src="./images/saleem-car-interior.jpg" alt="بوستر سليم ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./images/saleem-car-interior.jpg'" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- WHY CHOOSE US (EXTRACTED FROM OFFICIAL FLYER)                -->
+  <!-- ============================================================ -->
+  <section id="why-us" class="py-20 px-4 bg-brand-dark border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="why_tag">
+          لماذا سليم؟ | WHY CHOOSE SALEEM
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4" data-i18n="why_heading">
+          معايير ذهبية تضمن لك راحة البال
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="why_subheading">
+          نلتزم بأعلى مقاييس الجودة والسلامة لتكون رحلتك معنا تجربة مريحة وسلسة بكل المقاييس.
+        </p>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Models 2022-2026 -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_1_title">جميع السيارات موديلات 2022 : 2026</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_1_desc">
+            أسطول حديث بالكامل يخضع لصيانة دورية شاملة لضمان أقصى درجات الراحة وعدم حدوث أي أعطال على الطريق.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Drivers Experience -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_2_title">قائدي سيارات على أعلى مستوى من الخبرة</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_2_desc">
+            سائقون محترفون يحملون رخص قيادة مهنية مع دراية تامة بكافة شبكات الطرق السريعة والمحاور بمصر وأعلى درجات اللباقة.
+          </p>
+        </div>
+
+        <!-- Pillar 3: English Fluent -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-language"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_3_title">قائدي سيارات يجيدون اللغة الإنجليزية</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_3_desc">
+            تواصل سلس واحترافي لخدمة السياح وضيوف المؤتمرات والوفود الأجنبية ورجال الأعمال القادمين من الخارج.
+          </p>
+        </div>
+
+        <!-- Pillar 4: GPS Safety -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-satellite-dish"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_4_title">متابعة GPS حية لضمان سلامتكم</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_4_desc">
+            جميع السيارات مزودة بنظام تتبع متصل بغرفة العمليات لمتابعة خط السير والسرعة لضمان سلامة الركاب بنسبة 100%.
+          </p>
+        </div>
+
+        <!-- Pillar 5: 24/7 Availability -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_5_title">خدمة متوفرة 24 ساعة طوال أيام الأسبوع</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_5_desc">
+            حجوزات فورية ورحلات طارئة في أي ساعة من الليل أو النهار مع سرعة استجابة فائقة من فريق خدمة العملاء.
+          </p>
+        </div>
+
+        <!-- Pillar 6: Best Rates -->
+        <div class="glass-card rounded-2xl p-7 hover-glow transition-all">
+          <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl mb-5">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2" data-i18n="why_6_title">أسعار حصرية لا تقبل المنافسة</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed" data-i18n="why_6_desc">
+            أفضل معادلة بين السعر العادل والخدمة الـ VIP الفاخرة بدون أي رسوم خفية أو زيادات غير مبررة على الإطلاق.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- LOCATION & CONTACT SECTION (WITH DARK GOOGLE MAPS EMBED)     -->
+  <!-- ============================================================ -->
+  <section id="contact" class="py-20 px-4 bg-brand-black border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="contact_tag">
+          تواصل معنا وموقعنا | CONTACT & LOCATION
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4" data-i18n="contact_heading">
+          نحن في خدمتكم دائماً لكافة المطارات والمحافظات
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="contact_subheading">
+          تفضل بالتواصل معنا هاتفياً أو عبر الواتساب أو بزيارة مقرنا للحجز الفوري والاستفسار عن العروض والأسعار لكافة المحافظات.
+        </p>
+      </div>
+
+      <!-- Main Contact & Map Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Contact Information Cards (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-4">
+          
+          <!-- Address Card -->
+          <div class="glass-card rounded-2xl p-5 border border-neutral-800 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white mb-1" data-i18n="contact_addr_title">عنوان المقر الرئيسي</h4>
+              <p class="text-xs text-neutral-300 mb-1" data-i18n="contact_addr_val">الموقع المحدد على الخريطة</p>
+              <span class="text-[11px] text-brand-red" data-i18n="contact_addr_note">مقر سليم لخدمات الليموزين والسياحة والزفاف</span>
+            </div>
+          </div>
+
+          <!-- Primary Phone Card -->
+          <div class="glass-card rounded-2xl p-5 border border-neutral-800 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-white mb-1" data-i18n="contact_phone_title">أرقام الهاتف المباشرة (24 ساعة)</h4>
+              <div class="flex flex-col gap-1 text-sm font-bold">
+                <a href="tel:01001214078" class="text-white hover:text-brand-red transition-colors flex items-center justify-between">
+                  <span>01001214078</span>
+                  <span class="text-[11px] font-normal text-emerald-400">اتصال فوري / واتساب</span>
+                </a>
+                <a href="tel:01001214078" class="text-neutral-300 hover:text-brand-red transition-colors flex items-center justify-between">
+                  <span>01001214078</span>
+                  <span class="text-[11px] font-normal text-neutral-400">خط إضافي</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Direct Card -->
+          <div class="glass-card rounded-2xl p-5 border border-emerald-600/30 bg-emerald-950/20 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-900/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-white mb-1" data-i18n="contact_wa_title">خدمة الحجز عبر الواتساب</h4>
+              <p class="text-xs text-neutral-300 mb-3" data-i18n="contact_wa_desc">أرسل تفاصيل رحلتك لتلقي التأكيد وعروض الأسعار فوراً.</p>
+              <a href="https://wa.me/201001214078?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%81%20%D9%88%D8%A7%D9%8A" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-white transition-colors">
+                <span data-i18n="btn_chat_whatsapp">فتح محادثة واتساب الآن</span>
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="glass-card rounded-2xl p-5 border border-neutral-800 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-xl shrink-0">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white mb-1" data-i18n="contact_hours_title">مواعيد العمل</h4>
+              <p class="text-xs text-neutral-300" data-i18n="contact_hours_desc">خدمة متاحة على مدار 24 ساعة يومياً، 7 أيام في الأسبوع، طوال أيام العطلات والمناسبات الرسمية.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Embedded Google Maps with Luxury Dark Frame (7 cols) -->
+        <div class="lg:col-span-7 glass-card rounded-2xl p-3 sm:p-4 border border-neutral-800 flex flex-col">
+          <div class="flex items-center justify-between px-3 py-2 text-xs font-bold text-neutral-300 border-b border-neutral-800 mb-3">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-map-location text-brand-red"></i>
+              <span data-i18n="map_title">خريطة الموقع التفاعلية - مصر</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-emerald-400 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+              <span data-i18n="map_status">المقر متاح للزيارة</span>
+            </span>
+          </div>
+
+          <!-- The Map Iframe -->
+          <div class="relative w-full flex-1 min-h-[380px] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-950">
+            <iframe 
+              title="موقع سليم ليموزين مصر"
+              src="https://www.google.com/maps?q=maps.app.goo.gl%2F1B2J5mwz7DZ23X2y8%3Fg_st%3Dawb&amp;output=embed"
+              class="w-full h-full border-0 filter invert-[0.9] hue-rotate-180 contrast-[1.1] grayscale-[0.2]"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a href="https://maps.app.goo.gl/1B2J5mwz7DZ23X2y8?g_st=awb" target="_blank" rel="noopener noreferrer" class="absolute top-4 right-4 z-10 bg-brand-red hover:bg-brand-redDark text-white text-xs font-bold px-4 py-2.5 rounded-lg shadow-luxury-red transition-all" data-i18n="open_maps">افتح الموقع على خرائط Google ↗</a>
+            <!-- Pin Overlay Indicator -->
+            <div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-brand-black/90 backdrop-blur-md border border-neutral-800 p-3 rounded-xl flex items-center gap-3">
+              <img src="./images/saleem-logo.jpeg" alt="Saleem" class="w-12 h-8 rounded object-cover border border-neutral-800" onerror="this.src='./images/saleem-logo.jpeg'" />
+              <div class="text-right">
+                <span class="block text-xs font-bold text-white">Saleem Limousine Egypt</span>
+                <span class="block text-[10px] text-neutral-400" data-i18n="map_coverage">خدمة تغطي كافة المطارات وجميع محافظات مصر</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- FOOTER                                                       -->
+  <!-- ============================================================ -->
+  <footer class="bg-neutral-950 border-t border-white/10 pt-16 pb-12 px-4 text-neutral-400 text-xs">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="./images/saleem-logo.jpeg" alt="سليم ليموزين" class="h-12 w-auto max-w-[100px] rounded border border-neutral-800 object-contain" onerror="this.src='./images/saleem-logo.jpeg'" />
+            <span class="font-extrabold text-base text-white tracking-wider">
+              SALEEM <span class="text-brand-red">LIMOUSINE</span>
+            </span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed" data-i18n="footer_about">
+            الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال من المطارات ولكافة أنحاء جمهورية مصر العربية.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://wa.me/201001214078" target="_blank" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-emerald-500 hover:text-emerald-400 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="tel:01001214078" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-brand-red hover:text-brand-red flex items-center justify-center transition-colors">
+              <i class="fa-solid fa-phone text-sm"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-blue-500 hover:text-blue-400 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2" data-i18n="footer_links_title">روابط سريعة</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#home" class="hover:text-brand-red transition-colors" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#about" class="hover:text-brand-red transition-colors" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="#fleet" class="hover:text-brand-red transition-colors" data-i18n="nav_fleet">أسطول السيارات</a></li>
+            <li><a href="#wedding" class="hover:text-brand-red transition-colors" data-i18n="nav_wedding">سيارات زفاف العرايس</a></li>
+            <li><a href="#booking-section" class="hover:text-brand-red transition-colors" data-i18n="btn_book_now">محرك الحجز الفوري</a></li>
+            <li><a href="#contact" class="hover:text-brand-red transition-colors" data-i18n="nav_contact">اتصل بنا وموقعنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Directory -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2" data-i18n="footer_services_title">خدمات الليموزين</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#booking-section" onclick="prefillService('استقبال وتوديع مطارات')" class="hover:text-brand-red transition-colors" data-i18n="srv_airport_title">استقبال مطار القاهرة وبرج العرب</a></li>
+            <li><a href="#wedding" class="hover:text-brand-red transition-colors" data-i18n="srv_wedding_title">زفاف العرايس والمناسبات</a></li>
+            <li><a href="#booking-section" onclick="prefillService('تعاقدات خاصة مع الشركات')" class="hover:text-brand-red transition-colors" data-i18n="srv_corp_title">تعاقدات خاصة مع الشركات ورجال الأعمال</a></li>
+            <li><a href="#booking-section" onclick="prefillService('سفر محافظات وسياحة')" class="hover:text-brand-red transition-colors" data-i18n="srv_intercity_title">سفر جميع محافظات مصر</a></li>
+            <li><a href="#booking-section" onclick="prefillService('مشاوير كشف أطباء')" class="hover:text-brand-red transition-colors" data-i18n="srv_medical_title">مشاوير كشف الأطباء والعيادات</a></li>
+            <li><a href="#fleet" onclick="filterFleet('van')" class="hover:text-brand-red transition-colors" data-i18n="srv_group_title">فانات سياحية VIP 14 راكب</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Hotline -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2" data-i18n="footer_contact_title">الخط الساخن للحجز</h4>
+          <p class="text-xs text-neutral-400 mb-3" data-i18n="footer_hotline_desc">
+            فريق خدمة العملاء جاهز لتأكيد حجوزاتكم والرد على كافة استفساراتكم 24 ساعة يومياً:
+          </p>
+          <div class="space-y-2">
+            <a href="tel:01001214078" class="block font-black text-lg text-white hover:text-brand-red transition-colors">
+              <i class="fa-solid fa-phone text-brand-red ml-1.5 mr-1.5 text-sm"></i>
+              01001214078
+            </a>
+            <a href="tel:01001214078" class="block font-bold text-sm text-neutral-300 hover:text-brand-red transition-colors">
+              <i class="fa-solid fa-mobile-screen text-brand-red ml-1.5 mr-1.5 text-xs"></i>
+              01001214078
+            </a>
+            <div class="pt-2 text-[11px] text-neutral-500">
+              <i class="fa-solid fa-location-dot ml-1 mr-1"></i> الموقع المحدد على الخريطة
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-neutral-500 text-[11px]">
+        <p>
+          &copy; <span id="currentYear"></span> Saleem Limousine (سليم ليموزين). <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span>
+        </p>
+        <p class="flex items-center gap-1.5">
+          <span data-i18n="footer_designed">تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر</span>
+          <i class="fa-solid fa-heart text-brand-red text-xs"></i>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MOBILE BOTTOM APP NAVIGATION BAR (FOR NATIVE APP FEEL)       -->
+  <!-- ============================================================ -->
+  <nav id="mobileBottomNav" class="fixed bottom-0 left-0 right-0 z-40 bg-neutral-950/95 backdrop-blur-xl border-t border-neutral-800/80 px-2 py-2 flex items-center justify-around text-neutral-400 text-[10px] sm:hidden shadow-2xl safe-area-bottom">
+    <a href="#home" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-house text-base"></i>
+      <span data-i18n="nav_home">الرئيسية</span>
+    </a>
+    <a href="#fleet" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-car text-base"></i>
+      <span data-i18n="nav_fleet">السيارات</span>
+    </a>
+    <!-- Central Prominent Book Button -->
+    <a href="#booking-section" class="flex flex-col items-center -mt-6 group">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brand-red to-brand-redDark text-white flex items-center justify-center shadow-luxury-red border-2 border-neutral-950 group-active:scale-95 transition-transform">
+        <i class="fa-solid fa-calendar-check text-base"></i>
+      </div>
+      <span class="mt-0.5 font-bold text-white text-[10px]" data-i18n="btn_book_now">احجز الآن</span>
+    </a>
+    <a href="#wedding" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-gem text-base"></i>
+      <span data-i18n="nav_wedding">الزفاف</span>
+    </a>
+    <button onclick="installPWA()" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-download text-base text-brand-red"></i>
+      <span data-i18n="nav_app">تثبيت التطبيق</span>
+    </button>
+  </nav>
+
+  <!-- Smart PWA Install Banner for Mobile -->
+  <div id="pwaInstallBanner" class="fixed top-24 left-4 right-4 z-50 max-w-md mx-auto hidden transition-all duration-500 transform -translate-y-4 opacity-0">
+    <div class="glass-card rounded-2xl p-4 border border-brand-red/40 bg-neutral-950/95 shadow-2xl flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <img src="./images/saleem-logo.jpeg" alt="Saleem App" class="w-12 h-12 rounded-xl object-contain border border-neutral-800 shrink-0 shadow" />
+        <div>
+          <h4 class="text-xs font-bold text-white flex items-center gap-1.5">
+            <span data-i18n="pwa_title">تطبيق سليم ليموزين</span>
+            <span class="text-[9px] bg-brand-red/20 text-brand-red px-1.5 py-0.5 rounded font-black">APP</span>
+          </h4>
+          <p class="text-[11px] text-neutral-400 mt-0.5" data-i18n="pwa_desc">ثبت التطبيق على هاتفك لحجز أسرع وتجربة سلسة</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="installPWA()" class="px-3.5 py-1.5 rounded-lg bg-brand-red text-white text-xs font-bold shadow hover:brightness-110 active:scale-95 transition-all" data-i18n="btn_install">تثبيت</button>
+        <button onclick="dismissPwaBanner()" class="text-neutral-400 hover:text-white p-1 text-sm"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- iOS PWA Instructions Modal -->
+  <div id="iosInstallModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity duration-300">
+    <div class="glass-card max-w-sm w-full p-6 rounded-2xl border border-neutral-800 bg-neutral-950 text-center relative animate-float">
+      <button onclick="closeIosModal()" class="absolute top-4 left-4 text-neutral-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+        <img src="./images/saleem-logo.jpeg" alt="Saleem" class="w-16 h-16 rounded-2xl mx-auto mb-4 border border-neutral-800 shadow-lg object-contain" />
+      <h3 class="text-base font-extrabold text-white mb-2" data-i18n="ios_title">تثبيت تطبيق سليم على آيفون</h3>
+      <p class="text-xs text-neutral-400 leading-relaxed mb-5" data-i18n="ios_desc">
+        للحصول على تجربة التطبيق الكاملة وحجز أسهل في أي وقت:
+      </p>
+      <div class="space-y-3 text-xs text-neutral-300 text-right bg-neutral-900/80 p-4 rounded-xl border border-neutral-800 mb-6">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">1</span>
+          <span data-i18n="ios_step_1">اضغط على زر المشاركة <i class="fa-solid fa-arrow-up-from-bracket text-brand-red mx-1"></i> أسفل Safari.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">2</span>
+          <span data-i18n="ios_step_2">مرر للأسفل واختر <strong>"إضافة إلى الشاشة الرئيسية"</strong> ➕.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">3</span>
+          <span data-i18n="ios_step_3">اضغط على <strong>"إضافة" (Add)</strong> في أعلى الشاشة.</span>
+        </div>
+      </div>
+      <button onclick="closeIosModal()" class="w-full py-2.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-bold transition-colors" data-i18n="btn_got_it">فهمت ذلك</button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- FLOATING QUICK ACTIONS (WHATSAPP & PHONE & BACK TO TOP)      -->
+  <!-- ============================================================ -->
+  <div class="fixed bottom-20 sm:bottom-6 left-4 sm:left-6 z-40 flex flex-col items-center gap-3">
+    
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="opacity-0 pointer-events-none transition-all duration-300 w-11 h-11 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-200 hover:bg-brand-red hover:text-white flex items-center justify-center shadow-lg" title="العودة للأعلى">
+      <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+    <!-- Floating Call Button -->
+    <a href="tel:01001214078" class="w-12 h-12 rounded-full bg-brand-red text-white flex items-center justify-center shadow-luxury-red hover:scale-110 active:scale-95 transition-all" title="اتصل بنا هاتفياً: 01001214078">
+      <i class="fa-solid fa-phone text-lg"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button with Pulse Ripple -->
+    <div class="relative group">
+      <div class="absolute -inset-1 rounded-full bg-emerald-500 opacity-60 animate-ripple pointer-events-none"></div>
+      <a href="https://wa.me/201001214078?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B1%D8%AD%D9%84%D8%A9%20%D9%85%D8%B9%20%D8%B3%D9%8A%D9%81%20%D9%88%D8%A7%D9%8A%20%D9%84%D9%8A%D9%85%D9%88%D8%B2%D9%8A%D9%86" target="_blank" rel="noopener" class="relative w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-xl hover:bg-emerald-500 hover:scale-110 active:scale-95 transition-all" title="تواصل عبر واتساب: 01001214078">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- ============================================================ -->
+  <!-- LIGHTBOX MODAL FOR IMAGE ZOOM                                -->
+  <!-- ============================================================ -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4 transition-opacity duration-300" onclick="closeLightbox(event)">
+    <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+      <!-- Close Button -->
+      <button onclick="closeLightbox(null, true)" class="absolute -top-12 right-0 sm:right-0 text-white text-3xl hover:text-brand-red transition-colors p-2" title="إغلاق">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Lightbox Image -->
+      <img id="lightboxImg" src="" alt="Saleem Vehicle" class="max-w-full max-h-[75vh] object-contain rounded-xl border border-neutral-800 shadow-2xl" />
+      
+      <!-- Lightbox Caption -->
+      <div class="mt-4 text-center">
+        <h4 id="lightboxCaption" class="text-sm sm:text-base font-bold text-white mb-2"></h4>
+        <a id="lightboxBookBtn" href="#booking-section" onclick="closeLightbox(null, true)" class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-redDark text-white text-xs px-5 py-2 rounded-lg font-bold transition-all shadow-luxury-red">
+          <i class="fa-solid fa-car"></i>
+          <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ -->
+  <!-- JAVASCRIPT & I18N LOCALIZATION ENGINE                        -->
+  <!-- ============================================================ -->
+  <script>
+    // -------------------------------------------------------------
+    // 1. I18N TRANSLATION DICTIONARY
+    // -------------------------------------------------------------
+    const translations = {
+      ar: {
+        topbar_status: "متاحون 24 ساعة لاستقبال حجوزاتكم",
+        topbar_location: "من المطارات لكافة محافظات مصر",
+        topbar_corporate: "تعاقدات خاصة مع الشركات",
+        brand_tagline: "لخدمات الليموزين ورجال الأعمال والزفاف",
+        nav_home: "الرئيسية",
+        nav_about: "من نحن",
+        nav_wedding: "زفاف العرايس",
+        nav_fleet: "أسطول السيارات",
+        nav_services: "خدماتنا",
+        nav_why_us: "لماذا نحن",
+        nav_contact: "اتصل بنا",
+        badge_special: "مميز",
+        btn_book_now: "احجز الآن",
+
+        hero_pill: "الخيار الأول لليموزين الفاخر من المطارات لكافة محافظات مصر",
+        hero_title_part1: "فخامة وأمان في كل رحلة مع",
+        hero_subtitle: "استمتع بتجربة سفر فاخرة ومريحة بسيارات حديثة موديلات 2022 : 2026، مع نخبة من أمهر السائقين المحترفين ومتابعة لحظية بنظام GPS على مدار 24 ساعة لضمان سلامتك وراحتك التامة.",
+        hero_cta_book: "احجز رحلتك الفاخرة الآن",
+        hero_cta_wedding: "سيارات زفاف العرايس",
+        hero_cta_whatsapp: "محادثة واتساب سريعة",
+
+        trust_gps_title: "متابعة GPS حية",
+        trust_gps_desc: "أمان كامل على الطريق",
+        trust_models_title: "موديلات 2022-2026",
+        trust_models_desc: "أحدث فئات السيارات",
+        trust_time_title: "التزام 100% بالموعد",
+        trust_time_desc: "دقة متناهية لا تقبل التأخير",
+        trust_support_title: "خدمة 24/7 متواصلة",
+        trust_support_desc: "دعم وحجز فوري",
+
+        booking_tag: "حجز فوري وذكي | SMART BOOKING ENGINE",
+        booking_heading: "احجز رحلتك الآن في دقيقة واحدة",
+        booking_subheading: "املأ تفاصيل رحلتك وسيتم تحويلك مباشرة إلى الواتساب برسالة حجز منسقة ومؤكدة مع فريق عمليات سليم ليموزين.",
+        quick_routes_label: "مسارات سريعة (من المطارات لكافة محافظات مصر):",
+        qr_cairo_airport: "✈️ مطار القاهرة ⇋ كافة المحافظات",
+        qr_borg_airport: "✈️ مطار برج العرب ⇋ المحافظات",
+        qr_sphinx_airport: "✈️ مطار سفنكس ⇋ المحافظات",
+        qr_sharm_airport: "✈️ مطارات الغردقة وشرم الشيخ",
+        qr_intercity: "🚗 سفر بين جميع المحافظات",
+        qr_wedding: "💍 زفاف العرايس والمناسبات",
+        qr_corporate: "🏢 تعاقدات خاصة مع الشركات",
+        qr_medical: "🏥 مشوار كشف دكتور ومستشفيات",
+        btn_swap_locations: "تبديل الاتجاه",
+        field_pickup: "مكان الانطلاق / الاستلام *",
+        field_dropoff: "مكان الوصول / الوجهة *",
+        field_date: "تاريخ الرحلة *",
+        field_time: "وقت الرحلة *",
+        field_service_type: "نوع الرحلة *",
+        opt_trip_go: "ذهاب",
+        opt_trip_return: "عودة",
+        opt_trip_round_wait: "ذهاب وعودة وانتظار",
+        opt_trip_round_moves: "ذهاب وعودة وتحركات",
+        field_car_class: "فئة السيارة المطلوبة *",
+        field_name: "الاسم بالكامل *",
+        field_phone: "رقم الهاتف / الواتساب *",
+        field_notes: "ملاحظات إضافية (رقم الرحلة الجوية، طلب بوكيه ورد، عدد الحقائب...)",
+        field_passengers: "عدد الأفراد (الركاب) *",
+        field_luggage: "عدد الحقائب والأمتعة",
+        opt_pax_1: "1 فرد",
+        opt_pax_2: "2 أفراد",
+        opt_pax_3: "3 أفراد",
+        opt_pax_4: "4 أفراد",
+        opt_pax_5: "5 أفراد",
+        opt_pax_6: "6 أفراد",
+        opt_pax_7: "7 أفراد",
+        opt_pax_8: "8 أفراد",
+        opt_pax_9: "9 أفراد",
+        opt_pax_10: "10 أفراد",
+        opt_pax_11: "11 فرد",
+        opt_pax_12: "12 فرد",
+        opt_pax_13: "13 فرد",
+        opt_pax_14_plus: "14 فرد فأكثر (مجموعة VIP)",
+        hero_cta_fleet: "استكشف أسطولنا الفاخر",
+
+        car_cerato_title: "كيا سيراتو فارهة الحديثة",
+        car_cerato_desc: "تصميم انسيابي عصري وراحة ممتازة واستهلاك اقتصادي متطور، مجهزة بالكامل لمشاوير المطار والعمل والسياحة.",
+        car_sportage_silver_title: "كيا سبورتاج سيلفر إيديشن SUV",
+        car_sportage_silver_desc: "طراز فضي فاخر بلمسات كرومية أنيقة، مساحة واسعة للحقائب والركاب مع أداء قوي وثبات عالٍ.",
+        car_elantra_night_title: "هيونداي إلنترا نايت إيديشن",
+        car_elantra_night_desc: "طراز خاص بإضاءة ليلية وشخصية رياضية فخمة، عزل صوتي متفوق ومقاعد وثيرة لأطول الرحلات.",
+        car_hiace_highway_title: "تويوتا هاي إس إكسبريس للسفر",
+        car_hiace_highway_desc: "جاهزة لرحلات الطرق السريعة بين المطارات والقاهرة وكافة المحافظات، ثبات فائق ومساحة أمتعة ضخمة.",
+        car_hiace_safari_title: "تويوتا هاي إس سفاري ورحلات",
+        car_hiace_safari_desc: "مجهزة بأحدث مقاعد الراحة للرحلات السياحية للمصايف والعين السخنة وشرم الشيخ مع شاشات ترفيه.",
+        car_merc_white_title: "مرسيدس AMG وايت إيديشن زفاف",
+        car_merc_white_desc: "درة أسطول الزفاف الأبيض لشركة سليم، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.",
+        car_peugeot_red_title: "بيجو 508 جي تي أحمر ياقوتي",
+        car_peugeot_red_desc: "حضور لافت وجذاب بلون أحمر ملكي وبوكيه ورد أبيض فاخر وفتحة سقف بانورامية لصور زفاف لا تُنسى.",
+
+        spec_led: "إضاءة LED",
+        spec_sunroof: "فتحة سقف",
+        spec_4wd: "دفع رباعي",
+        spec_early: "وصول مبكر",
+        spec_screens: "شاشات ذكية",
+        booking_privacy: "بياناتك آمنة وسريّة 100% ويتم إرسالها لممثل الحجز فوراً.",
+        btn_confirm_whatsapp: "إرسال الحجز عبر واتساب (+201001214078)",
+
+        opt_srv_airport: "استقبال وتوديع مطارات",
+        opt_srv_wedding: "زفاف العرايس والمناسبات",
+        opt_srv_intercity: "سفر محافظات وسياحة",
+        opt_srv_corporate: "ليموزين رجال أعمال وشركات",
+        opt_srv_medical: "مشاوير كشف أطباء",
+
+        opt_car_mercedes: "مرسيدس VIP (سيدان / زفاف)",
+        opt_car_sedan: "سيدان فارهة (إلنترا / كورولا / سيراتو)",
+        opt_car_suv: "سيارة رياضية عائلية SUV (سبورتاج)",
+        opt_car_carens: "سيارة عائلية 7 راكب (كيا كارينز)",
+        opt_car_van: "ميني باص سياحي VIP 14 راكب (هاي إس)",
+        opt_car_peugeot: "بيجو 508 زفاف العرايس",
+
+        wedding_badge: "خدمات زفاف العرايس الفاخرة | WEDDING & BRIDAL SERVICES",
+        wedding_title_1: "اجعل ليلة العمر أسطورية مع",
+        wedding_title_2: "أفخم سيارات الزفاف والمناسبات في مصر",
+        wedding_desc: "نوفر للعريس والعروس أرقى سيارات الزفاف المجهزة والمزينة بأحدث تصميمات باقات الورد الطبيعي، مع سائقين بمظهر رسمي أنيق والتزام تام بأدق مواعيد جلسات التصوير وقاعات الأفراح.",
+        car_badge_vip: "VIP زفاف",
+        car_badge_exclusive: "الأكثر طلباً للعرائس",
+        car_badge_sport: "رياضية فاخرة",
+        wedding_car1_title: "مرسيدس C-Class برابوس إيديشن",
+        wedding_car1_desc: "سيارة مرسيدس سوداء ملوكية بتصميم برابوس الرياضي، مزينة بأجمل تشكيلة زهور بيضاء على الكبوت والمقابض لحضور مهيب يخطف الأنظار.",
+        wedding_car2_title: "مرسيدس AMG C-Class ناصعة البياض",
+        wedding_car2_desc: "الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي.",
+        wedding_car3_title: "بيجو 508 جي تي - لون أحمر ياقوتي",
+        wedding_car3_desc: "إطلالة جريئة وعصرية بلون أحمر ياقوتي ساحر مع بوكيه ورود أبيض ناصع، مجهزة بفتحة سقف بانوراما وإضاءات داخلية متميزة.",
+        wedding_feature_photo: "جاهزة لجلسات الفوتوسيشن",
+        wedding_feature_clean: "تعقيم وتلميع فندقي كامل",
+        wedding_feature_punctual: "وصول قبل الموعد بـ 30 دقيقة",
+        btn_book_car: "احجز الآن",
+        btn_book_wedding_now: "احجز سيارة زفافك الآن عبر واتساب",
+
+        wedding_pillar1_title: "تزيين احترافي متكامل",
+        wedding_pillar1_desc: "أرقى خامات الورد الطبيعي والصناعي الفاخر وتنسيقات شرائط ملائمة لفستان الزفاف.",
+        wedding_pillar2_title: "سائقون على أعلى مستوى من الخبرة",
+        wedding_pillar2_desc: "بدلة كاملة، تهذيب وأخلاق راقية، وتعامل احترافي يليق بأهم يوم في حياتكم.",
+        wedding_pillar3_title: "أنظمة صوت وإضاءة VIP",
+        wedding_pillar3_desc: "أنظمة صوتية عالية النقاء لتشغيل أغانيك المفضلة أثناء الزفة والتنقلات.",
+        wedding_pillar4_title: "باقات زفاف مرنة",
+        wedding_pillar4_desc: "عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية في كافة محافظات مصر.",
+
+        fleet_tag: "أسطول سليم | OUR PREMIUM FLEET",
+        fleet_heading: "سيارات حديثة تلائم كافة المناسبات والرحلات",
+        fleet_subheading: "جميع سياراتنا موديلات حديثة تبدأ من 2022 حتى 2026، مزودة بنظام تتبع GPS لسلامتكم، مكيفة ومعقمة ومجهزة بأعلى معايير الراحة.",
+        tab_all: "جميع السيارات",
+        tab_sedan: "سيدان فارهة",
+        tab_suv: "SUV ودفع رباعي",
+        tab_wedding: "سيارات الزفاف",
+        tab_van: "فانات وميني باص VIP",
+
+        car_elantra_title: "هيونداي إلنترا CN7 فارهة",
+        car_elantra_desc: "راحة استثنائية، ثبات فائق على الطرق السريعة ومثالية لمشاوير المطار وسفر المحافظات ورجال الأعمال.",
+        car_sportage_title: "كيا سبورتاج الرياضية SUV",
+        car_sportage_desc: "ارتفاع ممتاز عن الأرض، اتساع فسيح للشنطة، مقاعد مريحة لمسافات السفر الطويلة بين المحافظات.",
+        car_merc_brabus_title: "مرسيدس C-Class برابوس",
+        car_merc_brabus_desc: "القمة في الفخامة والهيبة مع باقة ورد ملكية وتجهيز متكامل للزفاف والمناسبات الخاصة الرفيعة.",
+        car_hiace_title: "تويوتا هاي إس Custom VIP",
+        car_hiace_desc: "صالون سياحي فاخر بمقاعد جلد كابتن شير كاستم وشاشات سقفية وتكييف مركزي قوي للرحلات والمطارات.",
+        car_corolla_title: "تويوتا كورولا الحديثة",
+        car_corolla_desc: "الاعتمادية الأولى عالمياً بأعلى مستويات الراحة والعزل الصوتي، مثالية لمشاوير القاهرة والمطارات.",
+        car_carens_title: "كيا كارينز عائلية رحبة",
+        car_carens_desc: "الحل الأمثل للعائلات والمجموعات حتى 7 أفراد، مع مرونة تامة لطي المقاعد وتوسيع مساحة الحقائب.",
+
+        cat_sedan: "سيدان تنفيذي",
+        cat_suv: "دفع رباعي عائلي",
+        cat_wedding: "زفاف ورجال أعمال",
+        cat_van: "فان عائلية وسياحية",
+        cat_family: "عائلية 7 مقاعد",
+
+        spec_seats_4: "4 ركاب",
+        spec_seats_7: "7 ركاب",
+        spec_seats_14: "14 راكب",
+        spec_bags_3: "3 حقائب",
+        spec_bags_4: "4 حقائب كبرى",
+        spec_ac: "تكييف ثنائي",
+        spec_ac_rear: "تكييف خلفي",
+        spec_smooth: "ثبات عالي",
+        spec_chauffeur: "سائق ببدلة",
+        spec_flower: "ورد طبيعي",
+        spec_wifi: "WiFi & GPS",
+        spec_screen: "شاشات VIP",
+        spec_luggage: "سعة حقائب ضخمة",
+        spec_safety: "أعلى أمان",
+        btn_book_this: "احجز هذه السيارة",
+
+        interior_badge: "صالون الفخامة والراحة | LUXURY VIP INTERIOR",
+        interior_title: "رحلات جماعية وسياحية برفاهية الطائرات الخاصة",
+        interior_desc: "تنفرد فانات سليم ليموزين بصالون داخلي مجهز بأفخم مقاعد الكابتن الجلدية المريحة، شاشات ترفيه سقفية ذكية، نظام صوتي مجسم، ستائر عازلة للضوء، وإضاءات ليلية هادئة لقضاء أمتع الرحلات وأطولها دون أي تعب.",
+        interior_point1: "مقاعد جلدية مريحة مع مساند للذراعين وقابلة للإمالة",
+        interior_point2: "شاشات عرض سقفية Multimedia Full HD",
+        interior_point3: "منافذ شحن USB للهواتف والأجهزة الذكية لكل راكب",
+        interior_point4: "تكييف مركزي متعدد الفتحات لكافة الصفوف",
+        btn_book_van_now: "احجز الميني باص VIP لرحلتك القادمة",
+
+        services_tag: "خدماتنا المتكاملة | COMPLETE LIMOUSINE SERVICES",
+        services_heading: "خدمات راقية مصممة لتلبية كافة احتياجاتكم",
+        services_subheading: "سواء كنت متجهاً إلى المطار، تستعد لحفل زفافك، أو تسافر لرحلة عمل بين المحافظات، سليم ليموزين شريكك الموثوق على الطريق.",
+        srv_airport_title: "استقبال وتوديع المطارات",
+        srv_airport_desc: "خدمة استقبال راقية من وإلى مطار القاهرة، مطار برج العرب، مطار سفنكس، ومطار شرم الشيخ مع متابعة مواعيد رحلات الطيران واستقبال العملاء بلافتة الاسم والترحيب.",
+        srv_wedding_title: "زفاف العرايس والمناسبات",
+        srv_wedding_desc: "أسطول زفاف متكامل من أحدث سيارات المرسيدس والبيجو والسيدان، تزيين بأرقى الورود الطبيعية، وسائقين بزي رسمي كامل لجعل ليلة زفافكم ذكرى خالدة.",
+        srv_corp_title: "تعاقدات خاصة مع الشركات ورجال الأعمال",
+        srv_corp_desc: "عقود سنوية وشهرية مخصصة للشركات والمؤسسات بأسعار تفضيلية، وتنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين بلباقة عالية ولغة إنجليزية.",
+        btn_book_corp: "طلب تعاقد شركات",
+        badge_corporate: "تعاقدات حصرية",
+        srv_intercity_title: "سفر محافظات مصر",
+        srv_intercity_desc: "سفر آمن وسريع من وإلى كافة المطارات وجميع محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).",
+        srv_medical_title: "مشاوير كشف الأطباء",
+        srv_medical_desc: "تنقلات مريحة وهادئة من الباب إلى الباب لزيارة المراكز الطبية والعيادات المتخصصة في القاهرة والإسكندرية، مع انتظار المريض حتى إتمام الكشف والعودة.",
+        srv_group_title: "رحلات سياحية وفانات VIP",
+        srv_group_desc: "فانات تويوتا هاي إس معدلة بصالون طائرات خاص 14 راكب مع شاشات ترفيهية وكراسي مريحة لكافة الرحلات السياحية والعائلية في جميع أنحاء مصر.",
+        btn_book_service: "احجز هذه الخدمة",
+        btn_view_wedding: "تصفح باقات الزفاف",
+
+        about_tag: "عن سليم ليموزين | ABOUT SALEEM",
+        about_heading_1: "الريادة في عالم الليموزين",
+        about_heading_2: "ثقة وأمان على مدار سنوات",
+        about_p1: "تقدم شركة سليم ليموزين خدمات النقل من وإلى المطارات، والسفر بين المحافظات، ورحلات المناسبات مع سائق خاص. يجمع أسطولنا بين الراحة والعناية بالتفاصيل والالتزام بالمواعيد في كل رحلة.",
+        about_p2: "يمتلك أسطولنا أحدث الطرازات العالمية المزودة بأحدث وسائل الترفيه والأمان، ويديره فريق عمل مدرب ومجهز بغرفة عمليات مركزية لمتابعة كل سيارة بنظام GPS لضمان أعلى مستويات الطمأنينة لعملائنا الكرام.",
+        stat_years: "سنوات خبرة",
+        stat_trips: "رحلة آمنة مكتملة",
+        stat_satisfaction: "رضا العملاء",
+        btn_call_us: "اتصل بنا: 01001214078",
+        btn_visit_us: "موقعنا على الخريطة",
+        office_caption_title: "أسطول سليم ليموزين",
+        office_caption_sub: "سيارات بخدمة سائق محترف على مدار الساعة",
+        office_badge: "خدمة 24/7",
+
+        why_tag: "لماذا سليم؟ | WHY CHOOSE SALEEM",
+        why_heading: "معايير ذهبية تضمن لك راحة البال",
+        why_subheading: "نلتزم بأعلى مقاييس الجودة والسلامة لتكون رحلتك معنا تجربة مريحة وسلسة بكل المقاييس.",
+        why_1_title: "جميع السيارات موديلات 2022 : 2026",
+        why_1_desc: "أسطول حديث بالكامل يخضع لصيانة دورية شاملة لضمان أقصى درجات الراحة وعدم حدوث أي أعطال على الطريق.",
+        why_2_title: "قائدي سيارات على أعلى مستوى من الخبرة",
+        why_2_desc: "سائقون محترفون يحملون رخص قيادة مهنية مع دراية تامة بكافة شبكات الطرق السريعة والمحاور بمصر وأعلى درجات اللباقة.",
+        why_3_title: "قائدي سيارات يجيدون اللغة الإنجليزية",
+        why_3_desc: "تواصل سلس واحترافي لخدمة السياح وضيوف المؤتمرات والوفود الأجنبية ورجال الأعمال القادمين من الخارج.",
+        why_4_title: "متابعة GPS حية لضمان سلامتكم",
+        why_4_desc: "جميع السيارات مزودة بنظام تتبع متصل بغرفة العمليات لمتابعة خط السير والسرعة لضمان سلامة الركاب بنسبة 100%.",
+        why_5_title: "خدمة متوفرة 24 ساعة طوال أيام الأسبوع",
+        why_5_desc: "حجوزات فورية ورحلات طارئة في أي ساعة من الليل أو النهار مع سرعة استجابة فائقة من فريق خدمة العملاء.",
+        why_6_title: "أسعار حصرية لا تقبل المنافسة",
+        why_6_desc: "أفضل معادلة بين السعر العادل والخدمة الـ VIP الفاخرة بدون أي رسوم خفية أو زيادات غير مبررة على الإطلاق.",
+
+        contact_tag: "تواصل معنا وموقعنا | CONTACT & LOCATION",
+        contact_heading: "نحن في خدمتكم دائماً لكافة المطارات والمحافظات",
+        contact_subheading: "تواصل معنا هاتفياً أو عبر الواتساب للحجز الفوري والاستفسار عن الرحلات والأسعار في جميع المحافظات.",
+        contact_addr_title: "عنوان المقر الرئيسي",
+        contact_addr_val: "الموقع المحدد على الخريطة",
+        contact_addr_note: "موقعنا المحدد على خرائط Google",
+        contact_phone_title: "أرقام الهاتف المباشرة (24 ساعة)",
+        contact_wa_title: "خدمة الحجز عبر الواتساب",
+        contact_wa_desc: "أرسل تفاصيل رحلتك لتلقي التأكيد وعروض الأسعار فوراً.",
+        btn_chat_whatsapp: "فتح محادثة واتساب الآن",
+        contact_hours_title: "مواعيد العمل",
+        contact_hours_desc: "خدمة متاحة على مدار 24 ساعة يومياً، 7 أيام في الأسبوع، طوال أيام العطلات والمناسبات الرسمية.",
+        map_title: "خريطة موقع سليم ليموزين",
+        map_status: "متاحون على مدار الساعة",
+        open_maps: "افتح الموقع على خرائط Google ↗",
+        map_coverage: "خدمة تغطي كافة المطارات وجميع محافظات مصر",
+
+        footer_about: "الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال من المطارات ولكافة أنحاء جمهورية مصر العربية.",
+        footer_links_title: "روابط سريعة",
+        footer_services_title: "خدمات الليموزين",
+        footer_contact_title: "الخط الساخن للحجز",
+        footer_hotline_desc: "فريق خدمة العملاء جاهز لتأكيد حجوزاتكم والرد على كافة استفساراتكم 24 ساعة يومياً:",
+        footer_rights: "جميع الحقوق محفوظة.",
+        footer_designed: "تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر",
+
+        btn_install_app: "تثبيت التطبيق",
+        btn_install_app_mobile: "تثبيت تطبيق سليم",
+        nav_app: "تثبيت التطبيق",
+        pwa_title: "تطبيق سليم ليموزين",
+        pwa_desc: "ثبت التطبيق على هاتفك لحجز أسرع وتجربة سلسة",
+        btn_install: "تثبيت",
+        ios_title: "تثبيت تطبيق سليم على آيفون",
+        ios_desc: "للحصول على تجربة التطبيق الكاملة وحجز أسهل في أي وقت:",
+        ios_step_1: "اضغط على زر المشاركة أسفل Safari.",
+        ios_step_2: "مرر للأسفل واختر \"إضافة إلى الشاشة الرئيسية\" ➕.",
+        ios_step_3: "اضغط على \"إضافة\" (Add) في أعلى الشاشة.",
+        btn_got_it: "فهمت ذلك"
+      },
+
+      en: {
+        topbar_status: "24/7 Availability for Bookings & Dispatch",
+        topbar_location: "From Airports to All Egyptian Governorates",
+        topbar_corporate: "Special Corporate Contracts",
+        brand_tagline: "Travels, Business Limousine & Bridal Wedding Services",
+        nav_home: "Home",
+        nav_about: "About Us",
+        nav_wedding: "Wedding Cars",
+        nav_fleet: "Our Fleet",
+        nav_services: "Services",
+        nav_why_us: "Why Us",
+        nav_contact: "Contact Us",
+        badge_special: "Special",
+        btn_book_now: "Book Now",
+
+        hero_pill: "#1 Luxury Limousine Service from Airports to All Egyptian Governorates",
+        hero_title_part1: "Experience Luxury Travel with",
+        hero_subtitle: "Indulge in a supreme luxury travel experience with our 2022:2026 vehicle fleet, vetted professional English-fluent chauffeurs, and 24/7 active GPS tracking ensuring ultimate peace of mind.",
+        hero_cta_book: "Book Your Luxury Ride",
+        hero_cta_wedding: "Wedding Limousines",
+        hero_cta_whatsapp: "Quick WhatsApp Chat",
+
+        trust_gps_title: "Live GPS Tracking",
+        trust_gps_desc: "Full road safety guaranteed",
+        trust_models_title: "2022 - 2026 Models",
+        trust_models_desc: "Latest high-tier fleet",
+        trust_time_title: "100% On-Time Guarantee",
+        trust_time_desc: "Strict adherence to schedules",
+        trust_support_title: "24/7 Non-Stop Service",
+        trust_support_desc: "Instant dispatch & booking",
+
+        booking_tag: "SMART BOOKING ENGINE | 24/7 DISPATCH",
+        booking_heading: "Reserve Your Limousine in 60 Seconds",
+        booking_subheading: "Fill in your itinerary details and you will be routed instantly to WhatsApp with a pre-filled, confirmed booking message.",
+        quick_routes_label: "Popular Quick Routes (From Airports to All Governorates):",
+        qr_cairo_airport: "✈️ Cairo Airport ⇋ All Governorates",
+        qr_borg_airport: "✈️ Borg El Arab ⇋ Governorates",
+        qr_sphinx_airport: "✈️ Sphinx Airport ⇋ Governorates",
+        qr_sharm_airport: "✈️ Hurghada / Sharm Airports",
+        qr_intercity: "🚗 Travel Between All Governorates",
+        qr_wedding: "💍 Bridal & Wedding Limousines",
+        qr_corporate: "🏢 Corporate Contracts",
+        qr_medical: "🏥 Doctor & Hospital Visits",
+        btn_swap_locations: "Swap Route",
+        field_pickup: "Pick-up Location *",
+        field_dropoff: "Drop-off Destination *",
+        field_date: "Trip Date *",
+        field_time: "Trip Time *",
+        field_service_type: "Trip Type *",
+        opt_trip_go: "One-way (Departure)",
+        opt_trip_return: "One-way (Return)",
+        opt_trip_round_wait: "Round-trip (With Waiting)",
+        opt_trip_round_moves: "Round-trip (With Local Movements)",
+        field_car_class: "Preferred Vehicle Class *",
+        field_name: "Full Name *",
+        field_phone: "Phone / WhatsApp Number *",
+        field_notes: "Additional Notes (Flight number, flowers, baggage count...)",
+        field_passengers: "Number of Passengers *",
+        field_luggage: "Luggage & Baggage Count",
+        opt_pax_1: "1 Passenger",
+        opt_pax_2: "2 Passengers",
+        opt_pax_3: "3 Passengers",
+        opt_pax_4: "4 Passengers",
+        opt_pax_5: "5 Passengers",
+        opt_pax_6: "6 Passengers",
+        opt_pax_7: "7 Passengers",
+        opt_pax_8: "8 Passengers",
+        opt_pax_9: "9 Passengers",
+        opt_pax_10: "10 Passengers",
+        opt_pax_11: "11 Passengers",
+        opt_pax_12: "12 Passengers",
+        opt_pax_13: "13 Passengers",
+        opt_pax_14_plus: "14+ Passengers (VIP Group)",
+        hero_cta_fleet: "Explore Our Fleet",
+
+        car_cerato_title: "Kia Cerato Modern Sedan",
+        car_cerato_desc: "Streamlined aerodynamic styling, superior cabin comfort, and full equipment for airport and executive travel.",
+        car_sportage_silver_title: "Kia Sportage Silver Edition SUV",
+        car_sportage_silver_desc: "Regal silver exterior with sleek chrome accents, generous cargo capacity, and outstanding road stability.",
+        car_elantra_night_title: "Hyundai Elantra Night Edition",
+        car_elantra_night_desc: "Distinctive night edition with LED accents, sporty demeanor, superior acoustic dampening, and plush seating.",
+        car_hiace_highway_title: "Toyota HiAce Highway Express",
+        car_hiace_highway_desc: "Engineered for swift highway transit between airports, Cairo, and all governorates with immense luggage capacity.",
+        car_hiace_safari_title: "Toyota HiAce Tourism Safari",
+        car_hiace_safari_desc: "Tailored for tourism journeys to Ain Sokhna, Sharm El Sheikh, and coastal getaways with VIP screens.",
+        car_merc_white_title: "Mercedes AMG White Edition Wedding",
+        car_merc_white_desc: "The bridal masterpiece of Saleem fleet, adorned with exquisite fresh floral arrangements.",
+        car_peugeot_red_title: "Peugeot 508 GT Ruby Red Wedding",
+        car_peugeot_red_desc: "Bold ruby red statement styling with white bridal flowers and panoramic glass roof for unforgettable wedding photos.",
+
+        spec_led: "Full LED",
+        spec_sunroof: "Sunroof",
+        spec_4wd: "4WD Drive",
+        spec_early: "Punctual Arrival",
+        spec_screens: "Smart Displays",
+        booking_privacy: "Your data is 100% confidential and dispatched directly to operations.",
+        btn_confirm_whatsapp: "Send Booking via WhatsApp (+201001214078)",
+
+        opt_srv_airport: "Airport Meet & Greet Transfer",
+        opt_srv_wedding: "Bridal & Wedding Limousine",
+        opt_srv_intercity: "Intercity City-to-City Travel",
+        opt_srv_corporate: "Corporate & Executive Travel",
+        opt_srv_medical: "Medical Clinic & Doctor Visit",
+
+        opt_car_mercedes: "Mercedes-Benz VIP (Sedan / Wedding)",
+        opt_car_sedan: "Luxury Sedan (Elantra / Corolla / Cerato)",
+        opt_car_suv: "VIP SUV (Kia Sportage)",
+        opt_car_carens: "7-Seater Family MPV (Kia Carens)",
+        opt_car_van: "14-Passenger VIP Minibus (Toyota HiAce)",
+        opt_car_peugeot: "Peugeot 508 Bridal Wedding",
+
+        wedding_badge: "LUXURY BRIDAL & WEDDING SERVICES",
+        wedding_title_1: "Make Your Wedding Unforgettable with",
+        wedding_title_2: "The Finest Wedding Limousines in Egypt",
+        wedding_desc: "We present couples with top-tier luxury wedding limousines styled with natural floral arrangements, suited professional chauffeurs, and punctual arrival for photoshoots and wedding halls.",
+        car_badge_vip: "VIP Wedding",
+        car_badge_exclusive: "Bridal Favorite",
+        car_badge_sport: "Luxury Sport",
+        wedding_car1_title: "Mercedes C-Class Brabus Edition",
+        wedding_car1_desc: "Regal black Mercedes-Benz featuring aggressive Brabus aerodynamic styling, embellished with pure white rose arrangements on the hood and handles.",
+        wedding_car2_title: "Mercedes AMG C-Class Pearl White",
+        wedding_car2_desc: "The quintessential bridal masterpiece, decorated with pristine red & white floral bouquets, captured in front of Saleem's flagship office.",
+        wedding_car3_title: "Peugeot 508 GT - Ruby Red",
+        wedding_car3_desc: "A bold, avant-garde design in radiant ruby red with white floral decor, panoramic sunroof, and ambient interior mood illumination.",
+        wedding_feature_photo: "Photoshoot Session Ready",
+        wedding_feature_clean: "Full Sanitization & Showroom Polish",
+        wedding_feature_punctual: "Arrives 30 Mins Ahead of Time",
+        btn_book_car: "Book Now",
+        btn_book_wedding_now: "Book Your Wedding Car via WhatsApp",
+
+        wedding_pillar1_title: "Full Floral Styling",
+        wedding_pillar1_desc: "Premium fresh flower bouquets and custom ribbon decorations tailored to your wedding dress.",
+        wedding_pillar2_title: "Top-Tier Experienced Chauffeurs",
+        wedding_pillar2_desc: "Formally dressed in full suits, polite, courteous, and providing true VIP treatment.",
+        wedding_pillar3_title: "VIP Sound & Lighting",
+        wedding_pillar3_desc: "High-fidelity audio systems to play your custom wedding playlist during the procession.",
+        wedding_pillar4_title: "Flexible Wedding Packages",
+        wedding_pillar4_desc: "Hourly or full-day bookings at the most competitive, transparent rates across Egypt.",
+
+        fleet_tag: "OUR PREMIUM FLEET | MODEL YEARS 2022-2026",
+        fleet_heading: "Modern Vehicles Suited for Every Journey",
+        fleet_subheading: "All vehicles are 2022 through 2026 models, equipped with real-time GPS tracking, dual-zone climate control, and supreme comfort.",
+        tab_all: "All Vehicles",
+        tab_sedan: "Luxury Sedans",
+        tab_suv: "SUVs & Family",
+        tab_wedding: "Wedding Cars",
+        tab_van: "VIP Minibuses",
+
+        car_elantra_title: "Hyundai Elantra CN7 Luxury",
+        car_elantra_desc: "Remarkable ride comfort, smooth highway dynamics, and ample luggage space for airport transfers and business travel.",
+        car_sportage_title: "Kia Sportage Dynamic SUV",
+        car_sportage_desc: "High ground clearance, spacious cargo bay, and ergonomic seating ideal for long-distance intercity voyages.",
+        car_merc_brabus_title: "Mercedes C-Class Brabus",
+        car_merc_brabus_desc: "The pinnacle of automotive prestige with regal floral arrangements for weddings and VIP executives.",
+        car_hiace_title: "Toyota HiAce Custom VIP",
+        car_hiace_desc: "Custom jet-style leather seating, ceiling-mounted entertainment screens, and multi-zone AC for groups and tourism.",
+        car_corolla_title: "Toyota Corolla Prestige",
+        car_corolla_desc: "Globally proven reliability, serene cabin acoustic insulation, and smooth city/highway performance.",
+        car_carens_title: "Kia Carens 7-Seater MPV",
+        car_carens_desc: "The premier solution for large families and groups up to 7 passengers with flexible folding seats.",
+
+        cat_sedan: "Executive Sedan",
+        cat_suv: "Family SUV",
+        cat_wedding: "Bridal & VIP",
+        cat_van: "VIP Tourism Van",
+        cat_family: "7-Seater MPV",
+
+        spec_seats_4: "4 Seats",
+        spec_seats_7: "7 Seats",
+        spec_seats_14: "14 Seats",
+        spec_bags_3: "3 Bags",
+        spec_bags_4: "4 Large Bags",
+        spec_ac: "Dual AC",
+        spec_ac_rear: "Rear AC",
+        spec_smooth: "Highway Stability",
+        spec_chauffeur: "Suited Driver",
+        spec_flower: "Fresh Flowers",
+        spec_wifi: "WiFi & GPS",
+        spec_screen: "VIP Screens",
+        spec_luggage: "Huge Luggage Space",
+        spec_safety: "Top Safety",
+        btn_book_this: "Book This Vehicle",
+
+        interior_badge: "LUXURY VIP INTERIOR | PRIVATE JET FEEL",
+        interior_title: "Group & Tourism Travel with Private-Jet Comfort",
+        interior_desc: "Saleem Limousine vans feature custom quilted leather captain chairs, smart HD ceiling displays, immersive surround sound, privacy curtains, and calming night LED lighting.",
+        interior_point1: "Reclining ergonomic leather captain seats with armrests",
+        interior_point2: "High-definition multimedia ceiling video displays",
+        interior_point3: "Dedicated USB charging sockets for every passenger",
+        interior_point4: "High-capacity multi-vent air conditioning for all rows",
+        btn_book_van_now: "Book VIP Minibus for Your Next Journey",
+
+        services_tag: "COMPLETE LIMOUSINE SERVICES | EGYPT-WIDE",
+        services_heading: "Exceptional Services Tailored to Your Standards",
+        services_subheading: "Whether heading to an airport, preparing for your big wedding night, or traveling intercity for business, Saleem is your trusted companion.",
+        srv_airport_title: "Airport Transfers & Meet & Greet",
+        srv_airport_desc: "Punctual transfers to/from Cairo International, Borg El Arab, Sphinx, and Sharm El Sheikh with flight tracking and personalized name sign greetings.",
+        srv_wedding_title: "Bridal & Wedding Limousines",
+        srv_wedding_desc: "A fleet of pristine Mercedes, Peugeot, and luxury sedans adorned with fine flowers and steered by formally dressed chauffeurs.",
+        srv_corp_title: "Special Corporate Contracts & Business Travel",
+        srv_corp_desc: "Exclusive monthly and annual contracts for corporate entities and enterprises, executive delegations, and conference transit with English-fluent chauffeurs.",
+        btn_book_corp: "Corporate Contract Inquiry",
+        badge_corporate: "Exclusive Contracts",
+        srv_intercity_title: "Intercity Egypt-Wide Travel",
+        srv_intercity_desc: "Safe and swift transit to and from all airports and all Egyptian governorates (Cairo, Alexandria, Mansoura, Damietta, Red Sea, Sinai).",
+        srv_medical_title: "Doctor & Medical Clinic Visits",
+        srv_medical_desc: "Door-to-door patient-focused transit to specialized hospitals and clinics in Cairo & Alexandria, with standby waiting until you finish.",
+        srv_group_title: "Group Tours & VIP Tourism Vans",
+        srv_group_desc: "Customized 14-seater Toyota HiAce vans featuring private jet-style cabins for family vacations, tour groups, and corporate outings.",
+        btn_book_service: "Book This Service",
+        btn_view_wedding: "View Wedding Packages",
+
+        about_tag: "ABOUT SALEEM LIMOUSINE | EGYPT",
+        about_heading_1: "Pioneering Luxury Limousines",
+        about_heading_2: "Years of Safety, Trust & Prestige",
+        about_p1: "Saleem Limousine & Trips provides airport transfers, intercity travel, wedding transport, and private chauffeur journeys across Egypt. Our service pairs a comfortable fleet with attentive drivers and dependable timing.",
+        about_p2: "Our fleet consists of recent international automotive releases equipped with the latest convenience amenities, managed by a dedicated team and tracked 24/7 via GPS control room.",
+        stat_years: "Years of Excellence",
+        stat_trips: "Completed Safe Trips",
+        stat_satisfaction: "Client Satisfaction",
+        btn_call_us: "Call Now: 01001214078",
+        btn_visit_us: "View Our Map Location",
+        office_caption_title: "The Saleem Limousine Fleet",
+        office_caption_sub: "Professional chauffeur service, around the clock",
+        office_badge: "Available 24/7",
+
+        why_tag: "WHY CHOOSE SALEEM | OUR PILLARS",
+        why_heading: "Golden Standards That Guarantee Peace of Mind",
+        why_subheading: "We adhere strictly to highest safety, hygiene, and hospitality standards on every ride.",
+        why_1_title: "All Vehicles Are 2022 : 2026 Models",
+        why_1_desc: "A modern fleet undergoing rigorous scheduled maintenance to prevent breakdowns and ensure flawless performance.",
+        why_2_title: "Elite, Highly Experienced Chauffeurs",
+        why_2_desc: "Licensed, vetted drivers possessing exhaustive familiarity with Egypt's modern highway networks and defensive driving techniques.",
+        why_3_title: "Fluent English-Speaking Drivers",
+        why_3_desc: "Seamless, civilized communication accommodating international tourists, corporate guests, and foreign delegations.",
+        why_4_title: "Live GPS Tracking for Road Safety",
+        why_4_desc: "Central dispatch room continuously monitors route progress, speeds, and passenger security in real time.",
+        why_5_title: "24/7 Continuous Service Year-Round",
+        why_5_desc: "Available day and night, 365 days a year, for immediate bookings and emergency travel requests.",
+        why_6_title: "Unbeatable Competitive Rates",
+        why_6_desc: "The perfect equilibrium of luxury VIP service and transparent pricing with zero surprise surcharges.",
+
+        contact_tag: "CONTACT & LOCATION | EGYPT",
+        contact_heading: "Always at Your Service Across All Egyptian Governorates",
+        contact_subheading: "Call or WhatsApp us for instant bookings and journey details across Egypt.",
+        contact_addr_title: "Main Office Address",
+        contact_addr_val: "Open our map location",
+        contact_addr_note: "Saleem Limousine on Google Maps",
+        contact_phone_title: "Direct 24/7 Phone Lines",
+        contact_wa_title: "WhatsApp Booking Line",
+        contact_wa_desc: "Send your itinerary for immediate quotes and booking confirmation.",
+        btn_chat_whatsapp: "Start WhatsApp Chat Now",
+        contact_hours_title: "Operating Hours",
+        contact_hours_desc: "Open 24 hours a day, 7 days a week, including all official holidays and weekends.",
+        map_title: "Saleem Limousine Map Location",
+        map_status: "Available around the clock",
+        open_maps: "Open location in Google Maps ↗",
+        map_coverage: "Serving All Egyptian Airports & Governorates",
+
+        footer_about: "The premier limousine service provider for airport transfers, bridal wedding limos, corporate travel, and nationwide intercity journeys from all airports across Egypt.",
+        footer_links_title: "Quick Links",
+        footer_services_title: "Our Services",
+        footer_contact_title: "Booking Hotline",
+        footer_hotline_desc: "Our dispatch team is ready 24/7 to confirm your reservations:",
+        footer_rights: "All Rights Reserved.",
+        footer_designed: "Crafted with luxury excellence for Egyptian airports & all governorates",
+
+        btn_install_app: "Install App",
+        btn_install_app_mobile: "Install Saleem App",
+        nav_app: "Install App",
+        pwa_title: "Saleem Limousine App",
+        pwa_desc: "Install on your phone for faster bookings & a smooth experience",
+        btn_install: "Install",
+        ios_title: "Add Saleem App to iPhone",
+        ios_desc: "Get the full app experience and easier bookings anytime:",
+        ios_step_1: "Tap the Share button at the bottom of Safari.",
+        ios_step_2: "Scroll down and tap \"Add to Home Screen\" ➕.",
+        ios_step_3: "Tap \"Add\" at the top right of the screen.",
+        btn_got_it: "Got It!"
+      }
+    };
+
+    // -------------------------------------------------------------
+    // 2. LANGUAGE SWITCHER LOGIC (AR / EN)
+    // -------------------------------------------------------------
+    let currentLang = localStorage.getItem('saleem_lang') || 'ar';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('saleem_lang', lang);
+
+      const html = document.documentElement;
+      html.setAttribute('lang', lang);
+      html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+      // Update toggle button text
+      const langLabel = document.getElementById('langLabel');
+      if (langLabel) {
+        langLabel.textContent = lang === 'ar' ? 'English' : 'عربي';
+      }
+
+      // Update all translatable elements
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      // Update placeholders
+      const pickup = document.getElementById('pickupLocation');
+      const dropoff = document.getElementById('dropoffLocation');
+      const luggage = document.getElementById('luggageCount');
+      const name = document.getElementById('customerName');
+      const phone = document.getElementById('customerPhone');
+      const notes = document.getElementById('specialNotes');
+
+      if (lang === 'ar') {
+        if (pickup) pickup.placeholder = 'مثال: مطار القاهرة الدولي / المعادي / أي محافظة';
+        if (dropoff) dropoff.placeholder = 'مثال: مطار القاهرة صالة 3 / الإسكندرية / أي محافظة';
+        if (luggage) luggage.placeholder = 'أدخل عدد الحقائب (مثال: 3)';
+        if (name) name.placeholder = 'أدخل اسمك الكريم';
+        if (phone) phone.placeholder = 'مثال: 01012345678';
+        if (notes) notes.placeholder = 'أية طلبات خاصة إضافية ترغب في إبلاغنا بها...';
+      } else {
+        if (pickup) pickup.placeholder = 'e.g., Cairo Airport Terminal 3 / Alexandria / Any Governorate';
+        if (dropoff) dropoff.placeholder = 'e.g., Cairo Airport / Alexandria / Any Governorate';
+        if (luggage) luggage.placeholder = 'Enter luggage count (e.g. 3)';
+        if (name) name.placeholder = 'Enter your full name';
+        if (phone) phone.placeholder = 'e.g., +20 101 234 5678';
+        if (notes) notes.placeholder = 'Any special requests (flight number, flowers, baggage...)...';
+      }
+    }
+
+    function toggleLanguage() {
+      setLanguage(currentLang === 'ar' ? 'en' : 'ar');
+    }
+
+    // -------------------------------------------------------------
+    // 3. SMART BOOKING ENGINE LOGIC (WHATSAPP DISPATCH)
+    // -------------------------------------------------------------
+    function handleBookingSubmit(event) {
+      event.preventDefault();
+
+      const pickup = document.getElementById('pickupLocation').value.trim();
+      const dropoff = document.getElementById('dropoffLocation').value.trim();
+      const date = document.getElementById('tripDate').value;
+      const time = document.getElementById('tripTime').value;
+      const service = document.getElementById('serviceType').value;
+      const passengers = document.getElementById('passengersCount') ? document.getElementById('passengersCount').value : '4 أفراد';
+      const luggageRaw = document.getElementById('luggageCount') ? document.getElementById('luggageCount').value.trim() : '';
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const notes = document.getElementById('specialNotes').value.trim();
+
+      if (!pickup || !dropoff || !date || !time || !name || !phone) {
+        alert(currentLang === 'ar' ? 'يرجى ملء جميع الحقول المطلوبة لتأكيد حجزك.' : 'Please fill in all required fields to proceed.');
+        return;
+      }
+
+      let luggageDisplayAr = 'بدون أمتعة كبيرة';
+      let luggageDisplayEn = 'No large luggage';
+
+      if (luggageRaw && parseInt(luggageRaw, 10) > 0) {
+        const c = parseInt(luggageRaw, 10);
+        if (c === 1) luggageDisplayAr = 'حقيبة واحدة (1)';
+        else if (c === 2) luggageDisplayAr = 'حقيبتان (2)';
+        else if (c >= 3 && c <= 10) luggageDisplayAr = `${c} حقائب`;
+        else luggageDisplayAr = `${c} حقيبة`;
+        luggageDisplayEn = `${c} ${c === 1 ? 'Bag' : 'Bags'}`;
+      } else if (luggageRaw === '0') {
+        luggageDisplayAr = 'بدون حقائب (0)';
+        luggageDisplayEn = '0 Bags';
+      }
+
+      // Build structured WhatsApp message
+      let message = '';
+      if (currentLang === 'ar') {
+        message = `🚗 *طلب حجز ليموزين جديد - Saleem Limousine*\n` +
+                  `━━━━━━━━━━━━━━━━━━━━\n` +
+                  `👤 *الاسم:* ${name}\n` +
+                  `📱 *الهاتف:* ${phone}\n` +
+                  `📍 *نقطة الاستلام:* ${pickup}\n` +
+                  `🏁 *وجهة الوصول:* ${dropoff}\n` +
+                  `📅 *التاريخ:* ${date}\n` +
+                  `⏰ *الوقت:* ${time}\n` +
+                  `⭐ *نوع الرحلة:* ${service}\n` +
+                  `👥 *عدد الأفراد:* ${passengers}\n` +
+                  `🧳 *عدد الحقائب:* ${luggageDisplayAr}\n` +
+                  (notes ? `📝 *ملاحظات خاصة:* ${notes}\n` : '') +
+                  `━━━━━━━━━━━━━━━━━━━━\n` +
+                  `✨ تم الإرسال من الموقع الإلكتروني الرسمي لشركة سليم ليموزين`;
+      } else {
+        message = `🚗 *New Limousine Booking Request - Saleem Limousine*\n` +
+                  `━━━━━━━━━━━━━━━━━━━━\n` +
+                  `👤 *Customer Name:* ${name}\n` +
+                  `📱 *Phone / WhatsApp:* ${phone}\n` +
+                  `📍 *Pick-up Location:* ${pickup}\n` +
+                  `🏁 *Drop-off Destination:* ${dropoff}\n` +
+                  `📅 *Date:* ${date}\n` +
+                  `⏰ *Time:* ${time}\n` +
+                  `⭐ *Trip Type:* ${service}\n` +
+                  `👥 *Passengers:* ${passengers}\n` +
+                  `🧳 *Luggage Count:* ${luggageDisplayEn}\n` +
+                  (notes ? `📝 *Special Requests:* ${notes}\n` : '') +
+                  `━━━━━━━━━━━━━━━━━━━━\n` +
+                  `✨ Sent via Saleem Limousine Official Website`;
+      }
+
+      const whatsappNumber = '201001214078';
+      const encodedMsg = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMsg}`;
+
+      // Open WhatsApp in a new tab / application
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Helper to swap pickup and dropoff locations
+    function swapLocations() {
+      const pickupEl = document.getElementById('pickupLocation');
+      const dropoffEl = document.getElementById('dropoffLocation');
+      if (pickupEl && dropoffEl) {
+        const temp = pickupEl.value;
+        pickupEl.value = dropoffEl.value;
+        dropoffEl.value = temp;
+      }
+    }
+
+    // Helper to autofill route chips
+    function setQuickRoute(pickup, dropoff, serviceCategory) {
+      const pickupEl = document.getElementById('pickupLocation');
+      const dropoffEl = document.getElementById('dropoffLocation');
+      const serviceEl = document.getElementById('serviceType');
+
+      if (pickupEl) pickupEl.value = pickup;
+      if (dropoffEl) dropoffEl.value = dropoff;
+
+      if (serviceEl) {
+        if (serviceCategory === 'wedding' || serviceCategory === 'corporate') {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else if (serviceCategory === 'medical') {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
+        }
+      }
+
+      if (serviceCategory === 'corporate') {
+        const notesEl = document.getElementById('specialNotes');
+        if (notesEl && !notesEl.value) {
+          notesEl.value = currentLang === 'ar' ? 'الخدمة المطلوبة: تعاقدات خاصة مع الشركات' : 'Requested Service: Special Corporate Contracts';
+        }
+      }
+
+      const bookingSec = document.getElementById('booking-section');
+      if (bookingSec) {
+        bookingSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Helper when clicking "Book This Car" on cards
+    function bookSpecificCar(carName, serviceName) {
+      const serviceEl = document.getElementById('serviceType');
+      const notesEl = document.getElementById('specialNotes');
+
+      if (serviceEl) {
+        if (serviceName && serviceName.includes('زفاف')) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
+        }
+      }
+      if (notesEl && carName) {
+        notesEl.value = (currentLang === 'ar' ? 'السيارة المطلوبة: ' : 'Requested Vehicle: ') + carName;
+      }
+
+      const bookingSec = document.getElementById('booking-section');
+      if (bookingSec) {
+        bookingSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function prefillService(serviceName) {
+      const serviceEl = document.getElementById('serviceType');
+      const notesEl = document.getElementById('specialNotes');
+      if (serviceEl) {
+        if (serviceName && (serviceName.includes('زفاف') || serviceName.includes('شركات') || serviceName.includes('تعاقد'))) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else if (serviceName && (serviceName.includes('كشف') || serviceName.includes('أطباء'))) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
+        }
+      }
+      if (notesEl && serviceName) {
+        notesEl.value = (currentLang === 'ar' ? 'الخدمة المطلوبة: ' : 'Requested Service: ') + serviceName;
+      }
+      const bookingSec = document.getElementById('booking-section');
+      if (bookingSec) {
+        bookingSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 4. FLEET GALLERY FILTERING LOGIC
+    // -------------------------------------------------------------
+    function filterFleet(category) {
+      const tabs = document.querySelectorAll('.fleet-tab');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-filter') === category) {
+          tab.classList.remove('border-neutral-800', 'bg-neutral-900', 'text-neutral-300');
+          tab.classList.add('border-brand-red', 'bg-brand-red', 'text-white');
+        } else {
+          tab.classList.remove('border-brand-red', 'bg-brand-red', 'text-white');
+          tab.classList.add('border-neutral-800', 'bg-neutral-900', 'text-neutral-300');
+        }
+      });
+
+      const items = document.querySelectorAll('.fleet-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // -------------------------------------------------------------
+    // 5. LIGHTBOX MODAL LOGIC
+    // -------------------------------------------------------------
+    function openLightbox(imgSrc, caption) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      const cap = document.getElementById('lightboxCaption');
+      
+      if (img) img.src = imgSrc;
+      if (cap) cap.textContent = caption || '';
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeLightbox(event, forceClose) {
+      if (forceClose || (event && event.target.id === 'lightboxModal')) {
+        const modal = document.getElementById('lightboxModal');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 6. MOBILE MENU TOGGLE
+    // -------------------------------------------------------------
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      if (menu) menu.classList.add('hidden');
+      if (icon) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 7. SCROLL EVENT LISTENERS (BACK TO TOP & NAVBAR SHADOW)
+    // -------------------------------------------------------------
+    window.addEventListener('scroll', () => {
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      const navbar = document.getElementById('navbar');
+
+      if (window.scrollY > 400) {
+        if (backToTopBtn) {
+          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+        }
+      } else {
+        if (backToTopBtn) {
+          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+        }
+      }
+
+      if (window.scrollY > 50) {
+        if (navbar) {
+          navbar.classList.add('shadow-xl', 'bg-brand-black/95');
+        }
+      } else {
+        if (navbar) {
+          navbar.classList.remove('shadow-xl', 'bg-brand-black/95');
+        }
+      }
+    });
+
+    // -------------------------------------------------------------
+    // 8. INITIALIZATION ON DOM READY
+    // -------------------------------------------------------------
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current year
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+      // Set default date to today
+      const dateInput = document.getElementById('tripDate');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.value = today;
+        dateInput.min = today;
+      }
+
+      // Set default time to current time rounded + 2 hours
+      const timeInput = document.getElementById('tripTime');
+      if (timeInput) {
+        const now = new Date();
+        now.setHours(now.getHours() + 2);
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(Math.floor(now.getMinutes() / 15) * 15).padStart(2, '0');
+        timeInput.value = `${hours}:${minutes}`;
+      }
+
+      // Initialize language
+      setLanguage(currentLang);
+
+      // -------------------------------------------------------------
+      // PWA INSTALL BANNER: Show after 4 seconds if not dismissed
+      // -------------------------------------------------------------
+      const bannerDismissed = localStorage.getItem('pwa_banner_dismissed');
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+      if (!bannerDismissed && !isStandalone) {
+        setTimeout(() => {
+          const banner = document.getElementById('pwaInstallBanner');
+          if (banner) {
+            banner.classList.remove('hidden');
+            requestAnimationFrame(() => {
+              banner.classList.remove('-translate-y-4', 'opacity-0');
+            });
+          }
+        }, 4000);
+      }
+    });
+
+    // -------------------------------------------------------------
+    // 9. PWA: beforeinstallprompt CAPTURE
+    // -------------------------------------------------------------
+    let deferredInstallPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      // Show the desktop install button
+      const installBtn = document.getElementById('installPwaBtn');
+      if (installBtn) installBtn.classList.remove('hidden');
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredInstallPrompt = null;
+      dismissPwaBanner();
+      const installBtn = document.getElementById('installPwaBtn');
+      if (installBtn) installBtn.classList.add('hidden');
+    });
+
+    // -------------------------------------------------------------
+    // 10. PWA INSTALL FUNCTION
+    // -------------------------------------------------------------
+    function installPWA() {
+      // iOS Safari detection
+      const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isInStandaloneMode = window.navigator.standalone;
+
+      if (isIos && !isInStandaloneMode) {
+        // Show iOS instructions modal
+        const modal = document.getElementById('iosInstallModal');
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+        return;
+      }
+
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            dismissPwaBanner();
+          }
+          deferredInstallPrompt = null;
+        });
+      } else {
+        // Fallback: show iOS modal or a helpful hint
+        const isAndroid = /android/i.test(navigator.userAgent);
+        if (isAndroid) {
+          alert(currentLang === 'ar'
+            ? 'لتثبيت التطبيق: افتح قائمة المتصفح ← اختر "إضافة إلى الشاشة الرئيسية"'
+            : 'To install: Open browser menu → tap "Add to Home Screen"');
+        } else {
+          const modal = document.getElementById('iosInstallModal');
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+          }
+        }
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 11. DISMISS PWA BANNER
+    // -------------------------------------------------------------
+    function dismissPwaBanner() {
+      const banner = document.getElementById('pwaInstallBanner');
+      if (banner) {
+        banner.classList.add('-translate-y-4', 'opacity-0');
+        setTimeout(() => banner.classList.add('hidden'), 400);
+      }
+      localStorage.setItem('pwa_banner_dismissed', '1');
+    }
+
+    // -------------------------------------------------------------
+    // 12. CLOSE iOS MODAL
+    // -------------------------------------------------------------
+    function closeIosModal() {
+      const modal = document.getElementById('iosInstallModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 13. SERVICE WORKER REGISTRATION
+    // -------------------------------------------------------------
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('✅ Saleem SW registered:', reg.scope))
+          .catch(err => console.warn('SW registration failed:', err));
+      });
+    }
+  </script>
+
+</body>
+</html>

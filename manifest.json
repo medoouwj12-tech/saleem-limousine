@@ -1,0 +1,32 @@
+{
+  "name": "سليم ليموزين | Saleem Limousine",
+  "short_name": "Saleem",
+  "description": "تطبيق حجز سيارات ليموزين فاخرة للمطارات وسفر المحافظات وزفاف العرايس وتعاقدات الشركات.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": [
+    "travel",
+    "transportation",
+    "business"
+  ],
+  "icons": [
+    {
+      "src": "./images/saleem-logo.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./images/saleem-logo.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
