@@ -2723,11 +2723,11 @@
     // 4. FLEET GALLERY FILTERING LOGIC
     // -------------------------------------------------------------
     const selimFleet = [
-      { name: 'Mercedes-Benz S-Class', ar: 'مرسيدس-بنز S-Class', image: 'mercedes-s-class.jpg', category: 'sedan', passengers: 3, bags: 2, type: 'VIP Luxury Sedan', arType: 'سيدان فاخرة لكبار الشخصيات' },
-      { name: 'Mercedes-Benz E-Class', ar: 'مرسيدس-بنز E-Class', image: 'mercedes-e-class.jpg', category: 'sedan', passengers: 3, bags: 3, type: 'Executive Sedan', arType: 'سيدان تنفيذية' },
-      { name: 'Toyota HiAce VIP', ar: 'تويوتا هاي إيس VIP', image: 'toyota-hiace.jpg', category: 'van', passengers: 12, bags: 8, type: 'Luxury Van', arType: 'فان فاخر' },
-      { name: 'Hyundai H-1 Staria', ar: 'هيونداي H-1 ستاريا', image: 'hyundai-h1.jpg', category: 'family', passengers: 7, bags: 5, type: 'Family Trip Van', arType: 'فان للرحلات العائلية' },
-      { name: 'Chevrolet Suburban', ar: 'شيفروليه سوبربان', image: 'chevrolet-suburban.jpg', category: 'suv', passengers: 6, bags: 5, type: 'Luxury SUV', arType: 'سيارة SUV فاخرة' }
+      { name: 'Hyundai Elantra', ar: 'هيونداي إلنترا', image: '../../../5f08722c-7181-4d6c-a235-3098f3f728a1.jpg', gallery: ['../../../5f08722c-7181-4d6c-a235-3098f3f728a1.jpg', '../../../473c60c3-8740-4052-8949-7104e26d3742.jpg'], category: 'sedan', passengers: 4, bags: 2, type: 'Comfort Sedan', arType: 'سيدان مريحة' },
+      { name: 'Kia Cerato', ar: 'كيا سيراتو', image: '../../../6fb7f0ea-6ad5-4052-af68-6fa08fa0b6c1.jpg', gallery: ['../../../6fb7f0ea-6ad5-4052-af68-6fa08fa0b6c1.jpg'], category: 'sedan', passengers: 4, bags: 2, type: 'Comfort Sedan', arType: 'سيدان مريحة' },
+      { name: 'Kia Sportage', ar: 'كيا سبورتاج', image: '../../../4dffe024-6824-457e-9e1d-06e880033395.jpg', gallery: ['../../../4dffe024-6824-457e-9e1d-06e880033395.jpg', '../../../4fb3c2fc-67b5-459d-bb6b-201d6c8c6640.jpg', '../../../72777446-88b6-45d2-8fe0-95587eeac254.jpg', '../../../a57f3cd4-8b34-44aa-910e-e366753cfcef.jpg'], category: 'suv', passengers: 5, bags: 3, type: 'Premium SUV', arType: 'SUV فاخرة' },
+      { name: 'Toyota Hiace', ar: 'تويوتا هايس', image: '../../../91f4fffa-ee11-479d-ae3c-73e41debc5a2.jpg', gallery: ['../../../91f4fffa-ee11-479d-ae3c-73e41debc5a2.jpg', '../../../bf2f47ea-4bbe-45c9-a765-2b9f7d635ab0.jpg', '../../../51822aee-435a-4ea7-8316-cc045e808e95.jpg'], category: 'van', passengers: 14, bags: 8, type: 'Passenger Van', arType: 'فان رحلات' },
+      { name: 'Kia Carens', ar: 'كيا كارينز', image: '../../../b8b122fa-7a52-4ff0-a04b-7d866d4fab99.jpg', gallery: ['../../../b8b122fa-7a52-4ff0-a04b-7d866d4fab99.jpg', '../../../aa0eaff7-9441-4f53-acb8-dd0f92ffbb60.jpg'], category: 'family', passengers: 7, bags: 4, type: 'Family MPV', arType: 'سيارة عائلية' }
     ];
 
     function renderSelimFleet() {
@@ -3031,5 +3031,66 @@
     }
   </script>
 
+  <!-- Verified real fleet photos supplied for Saleem Limousine -->
+  <section id="uploadedFleet" class="uploaded-fleet-section">
+    <div class="uploaded-fleet-heading">
+      <span class="uploaded-fleet-kicker">SALEEM LIMOUSINE · VERIFIED FLEET</span>
+      <h2 data-i18n="uploaded_fleet_title">الأسطول الحقيقي بالصور</h2>
+      <p data-i18n="uploaded_fleet_subtitle">كل سيارة باسمها الصحيح وصورها الخارجية والداخلية مجمعة معًا.</p>
+    </div>
+    <div class="uploaded-fleet-grid">
+      <article class="uploaded-car-card">
+        <h3>Hyundai Elantra <span>هيونداي إلنترا</span></h3>
+        <div class="uploaded-car-gallery">
+          <img src="./5f08722c-7181-4d6c-a235-3098f3f728a1.jpg" alt="Hyundai Elantra - هيونداي إلنترا" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./473c60c3-8740-4052-8949-7104e26d3742.jpg" alt="Hyundai Elantra - هيونداي إلنترا" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+        </div>
+      </article>
+      <article class="uploaded-car-card">
+        <h3>Kia Cerato <span>كيا سيراتو</span></h3>
+        <div class="uploaded-car-gallery">
+          <img src="./6fb7f0ea-6ad5-4052-af68-6fa08fa0b6c1.jpg" alt="Kia Cerato - كيا سيراتو" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+        </div>
+      </article>
+      <article class="uploaded-car-card">
+        <h3>Kia Sportage <span>كيا سبورتاج</span></h3>
+        <div class="uploaded-car-gallery">
+          <img src="./4dffe024-6824-457e-9e1d-06e880033395.jpg" alt="Kia Sportage - كيا سبورتاج" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./4fb3c2fc-67b5-459d-bb6b-201d6c8c6640.jpg" alt="Kia Sportage - كيا سبورتاج" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./72777446-88b6-45d2-8fe0-95587eeac254.jpg" alt="Kia Sportage interior - صالون كيا سبورتاج" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./a57f3cd4-8b34-44aa-910e-e366753cfcef.jpg" alt="Kia Sportage rear - خلفية كيا سبورتاج" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+        </div>
+      </article>
+      <article class="uploaded-car-card">
+        <h3>Toyota Hiace <span>تويوتا هايس</span></h3>
+        <div class="uploaded-car-gallery">
+          <img src="./91f4fffa-ee11-479d-ae3c-73e41debc5a2.jpg" alt="Toyota Hiace - تويوتا هايس" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./bf2f47ea-4bbe-45c9-a765-2b9f7d635ab0.jpg" alt="Toyota Hiace - تويوتا هايس" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./51822aee-435a-4ea7-8316-cc045e808e95.jpg" alt="Toyota Hiace interior - صالون تويوتا هايس" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+        </div>
+      </article>
+      <article class="uploaded-car-card">
+        <h3>Kia Carens <span>كيا كارينز</span></h3>
+        <div class="uploaded-car-gallery">
+          <img src="./b8b122fa-7a52-4ff0-a04b-7d866d4fab99.jpg" alt="Kia Carens - كيا كارينز" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+          <img src="./aa0eaff7-9441-4f53-acb8-dd0f92ffbb60.jpg" alt="Kia Carens - كيا كارينز" onclick="openLightbox(this.src, this.alt)" loading="lazy" />
+        </div>
+      </article>
+    </div>
+  </section>
+  <style>
+    .uploaded-fleet-section { padding: 5rem 1.25rem; background: linear-gradient(180deg, #111 0%, #080808 100%); }
+    .uploaded-fleet-heading { max-width: 72rem; margin: 0 auto 2rem; text-align: center; }
+    .uploaded-fleet-kicker { color: #d4af37; font-size: .7rem; letter-spacing: .2em; font-weight: 800; }
+    .uploaded-fleet-heading h2 { margin: .6rem 0 .5rem; font-size: clamp(1.8rem, 4vw, 3rem); color: #fff; }
+    .uploaded-fleet-heading p { color: #a3a3a3; }
+    .uploaded-fleet-grid { max-width: 72rem; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; }
+    .uploaded-car-card { overflow: hidden; border: 1px solid rgba(212,175,55,.24); border-radius: 1rem; background: rgba(255,255,255,.04); }
+    .uploaded-car-card h3 { margin: 0; padding: 1rem 1.1rem .25rem; color: #fff; font-size: 1.1rem; }
+    .uploaded-car-card h3 span { display: block; margin-top: .25rem; color: #d4af37; font-size: .9rem; font-weight: 500; }
+    .uploaded-car-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: .35rem; padding: .75rem; }
+    .uploaded-car-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .65rem; cursor: zoom-in; transition: transform .25s ease, filter .25s ease; }
+    .uploaded-car-gallery img:hover { transform: scale(1.03); filter: brightness(1.1); }
+  </style>
 </body>
 </html>
