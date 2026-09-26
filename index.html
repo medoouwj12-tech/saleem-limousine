@@ -142,6 +142,53 @@
     .animate-ripple {
       animation: ripple 2s infinite ease-out;
     }
+
+    /* Keep every section within the device viewport on small screens. */
+    @media (max-width: 640px) {
+      html,
+      body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      section,
+      header,
+      footer {
+        max-width: 100%;
+      }
+
+      .grid > *,
+      .flex > * {
+        min-width: 0;
+      }
+
+      img,
+      iframe,
+      video,
+      input,
+      select,
+      textarea {
+        max-width: 100%;
+      }
+
+      input,
+      select,
+      textarea {
+        min-width: 0;
+      }
+
+      #home h1,
+      #home p,
+      .glass-card,
+      footer a {
+        overflow-wrap: anywhere;
+      }
+    }
   </style>
 </head>
 
